@@ -1,16 +1,36 @@
-/**
- * file: css/css.css
- * purpose: styling
- **/
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Define variables in the :root */
- :root {
-   --contrast: lime;
-   --backgr: #000;
- }
-
-/* Use your variables on elements */
- main {
-   color: var(--contrast);
-   background-color: var(--backgr);
- }
+/* 5 farver */
+:root {
+  --hvid: #f4f9e3;
+  --sort: #121112;
+  --farveEn: #92efa1; 
+  --farveTo: #2e8d33; 
+  --farveKontrast: #9b1a1a; 
+}
+body{
+  background-image:
+  url(../images/Artboard\ 1.webp);
+  background-size:cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navbar img {
+  width: 2rem;
+  height: auto;
+}
+.logo{
+width: 2rem;
+height: auto;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+margin-left:10rem;
+margin-right: 10rem;
+}
