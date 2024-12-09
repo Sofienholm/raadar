@@ -20,17 +20,52 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+nav {
+  padding: 1.5rem 2rem;
+  color: #fff;
+ }
+
+.navbar{
+display: flex;
+justify-content: flex-end;
+margin-left:10rem;
+margin-right: 10rem;
+margin-top:2rem;
+}
+
+/*logo*/
 .navbar img {
   width: 2rem;
   height: auto;
+  position: fixed;
 }
-.logo{
-width: 2rem;
-height: auto;
-}
-.navbar{
-display: flex;
-justify-content: space-between;
-margin-left:10rem;
-margin-right: 10rem;
-}
+.burger-label {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+ }
+ .menupunkter{
+  display: none;
+ }
+ #menu-bar{
+  display:none ;
+ }
+ #menu-bar:checked ~ .menupunkter {
+  display: block;
+ }
+ .menupunkter {
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background: #f53b1a;
+  z-index: 1;
+  width: 200px;
+  list-style: none;
+ }
+
+ .menupunkter a {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+  text-decoration: none;
+ }
