@@ -15,34 +15,37 @@
 }
 body{
   background-image:
-  url(../images/Artboard\ 1.webp);
-  background-size:cover ;
-  background-position: center;
-  background-repeat: no-repeat;
+  url(../images/Artboard\ 1.webp); max-width: 100%;
+  background-size: 100%;
+
+  font-family: 'Poppins', sans-serif;
 }
 nav {
-  padding: 1.5rem 2rem;
+  padding: 1rem 1rem;
   color: #fff;
+  padding-bottom: 5rem;
  }
 
 .navbar{
 display: flex;
 justify-content: flex-end;
+align-items: center;
 margin-left:10rem;
-margin-right: 10rem;
-margin-top:2rem;
+margin-top:0.1rem;
+gap: 35rem;
 }
 
 /*logo*/
 .navbar img {
-  width: 2rem;
+  width: 7.5rem;
   height: auto;
-  position: fixed;
 }
+
 .burger-label {
-  font-size: 1.5rem;
+  font-size: 6rem;
   color: white;
   cursor: pointer;
+margin-top: -5rem;
  }
  .menupunkter{
   display: none;
@@ -55,17 +58,188 @@ margin-top:2rem;
  }
  .menupunkter {
   position: absolute;
-  top: 4.5rem;
-  right: 0;
+  top: 6.5rem;
+  right:7rem;
   background: #f53b1a;
   z-index: 1;
   width: 200px;
   list-style: none;
+  padding: 2rem;
  }
 
  .menupunkter a {
   color: #fff;
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem;
   display: block;
   text-decoration: none;
  }
+ h1{
+color: #fff;
+font-size: 2rem;
+position: absolute;
+top: 15%;
+left: 33%;
+line-height: 1;
+transform: translate(-40%, -50%);
+
+font-style: italic;
+
+ }
+ h2{
+  color: #fff;
+font-size: 1.5rem;
+padding: 1rem;
+text-align: center;
+ }
+
+ p{
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+ }
+
+
+ main{
+  display: flex;
+  margin-left: 5rem;
+  margin-right: 6rem;
+  gap: 1rem;
+ }
+ .venstre{
+  position: relative;
+ 
+  width: 70%;
+  justify-content: center;
+  
+ }
+ .venstre img{
+  width: 50rem;
+  height: auto;
+  padding-top: 2rem;
+
+ }
+ .højre{
+  display: flex;
+
+  justify-content: space-evenly;
+  padding-right: 0 ;
+gap: 1rem;
+align-items: center;
+ }
+
+#midterbillede{
+  width: 15rem;
+  height: 25rem;
+  object-fit:cover;
+  box-shadow:  0 0 40px 0 rgba(0, 0, 0, 0.779);
+}
+#yderbillede{
+  width: 10rem;
+  height: 20rem;
+  object-fit:cover;
+  box-shadow:  0 0 40px 0 rgba(0, 0, 0, 0.779);
+
+}
+
+ .knapper{
+  display: flex;
+  margin-left: 15rem;
+  margin-top: 10rem;
+  gap: 9rem;
+
+  width: 30rem;
+  font-size:2rem;
+  font-weight: bold;
+
+
+  
+ }
+.knapper a{
+  text-decoration-line: none;
+color: #f0dcdc;
+  padding: 1rem;
+  background-color: #d1b8b896;
+  box-shadow:   -5px 0px 10px 0 #671515 ; 
+ }
+ .knapper a:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.intro{
+  display: flex; 
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 12rem;
+  height: 30rem;
+background-color: #e195848a;
+gap: 10rem;
+ 
+}
+.omradar{
+  align-self: flex-start;
+  background-color: #f5124f;
+  border-radius: 0 60px 60px 0;
+  width: 120rem;
+  justify-items: center;
+}
+.citat{
+  align-self: flex-end;
+  background-color:  #f5124f;
+  border-radius: 60px 0 0 60px;
+}
+.citat p{
+  padding-left: 5rem;
+  padding-right: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+ 
+  font-style: italic;
+}
+.omradar p{
+  padding-left: 8rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+}
+.omradar h2{
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+.omradar a{
+padding: 1rem;
+color: white;
+text-decoration-line: none;
+padding-top: 2rem;
+
+}
+
+
+section.koncert {
+  display: flex;
+  background-color: #e4616157;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  gap: 10px;
+
+
+}
+.koncert{
+
+}
+section.koncert img {
+  padding: 10px;
+  width: 30rem;
+  height: auto;
+}
+.some{
+
+}
+.some h2{
+  color: #fff;
+font-size: 1.5rem;
+position: absolute;
+top: 250%;
+left: 80%;
+
+transform: translate(-90%, -10%);
+}
