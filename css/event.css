@@ -1,10 +1,96 @@
-div.scroll-container {
-    background-color: #333;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body{
+    background-image:
+    url(../images/grønbaggrund_1.webp); max-width: 100%;
+    background-size: 100%;
+  
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+  }
+  h2{
+    color: #ffffff;
+  }
+  .vl {
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 500px;
+    position: absolute;
+    left: 21.5%;
+   
+    top: 90%;
+  }
+.kalender{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+  main.kalender {
+    background-color: #33333300;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
+    margin: 20rem;
+    width: 50rem;
+    height: 30rem;
+    transform: rotate(180deg);
+  }
+
+
+  
+  .kalender, .intro{
+margin-left: 15rem;
+margin-right: 15rem;
+  }
+  .efekt{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .efekt img{ display: block;
+    width: 100%;
+    filter: grayscale(100%) blur(2px);
+    transition: filter 0.5s ease;
+    }
+  .jan{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(180deg);
+  }
+  div.flere{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .efekt .overlag{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    color: white; 
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .boks{
+    border: 1px solid white;
+    width: 10rem;
+    height: 15rem;
+    margin-top: 1rem;
+    flex-direction: row;
+  }
+  .efekt:hover img {
+    filter: none;
   }
   
-  div.scroll-container img {
-    padding: 10px;
+  .efekt:hover .overlag {
+    opacity: 0; 
   }

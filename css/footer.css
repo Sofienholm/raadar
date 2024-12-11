@@ -1,0 +1,32 @@
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right:4rem ;
+  padding-bottom: 2rem;
+    width: 100%;
+    background-color: rgb(63, 59, 59);
+    color: rgb(168, 162, 162);
+    text-align: left;
+  }
+  footer p{
+    font-size: 0.8rem;
+    padding: 0%;
+    color: #888282;
+  }
+  .folgospo{
+    display: flex;
+  
+    gap: 0.5rem;
+    align-items: center;
+    padding-top: 0.7rem;
+    
+  }
+  .folgospo img{
+    width: 2.5rem;
+    opacity: 70%;
+   
+  
+  }
