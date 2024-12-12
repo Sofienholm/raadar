@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-image:
+    url(../images/Artboard\ 52.webp); max-width: 100%;
+    background-size: 100%;
+    background-repeat:repeat-y;
+  background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    width: 200%;
+    height: auto;
+    
+  }
+
+h1{
+
+}
+h2{
+text-align: center;
+margin-top: 3rem;
+margin-bottom:1.5rem;
+color:white;
+}
+h3{
+font-size: 1.5rem;
+}
+p{
+    font-size: 0.8rem;
+    color: #fff;
+
+    line-height: 1.4;
+    margin: 0;
+    
+}
+
+.brugernavn{
+    display: flex;
+    gap: 1rem;
+
+}
+.brugernavn img{
+    width: 0.5rem;
+   
+}
+
+  .anmeldelse{
+    border-radius: 1rem;
+    color: #fff;
+    line-height: 1.4;
+   justify-items: center;
+  }
+  .anmeldelse img{
+    width: 8rem;  /* tilpas størrelse */
+    height: 8rem;
+ 
+    object-fit: cover;
+    margin: 1rem;
+  }
+  .kasse{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 22rem;
+    padding: 2rem;
+    background-color: rgba(231, 84, 121, 0.519);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
+  .kasser{
+    display: flex;
+     justify-content: center;
+     gap: 2rem;
+  }
+  
+  #midterstebil{
+    scale:1.1;
+  }
+.vl{
+    border-left: 3px solid rgb(255, 255, 255);
+    height: 14rem;
+}
+.uploaded{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.delminder{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff2a;
+margin-left: 25%;
+margin-right: 25%;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 5.5rem;
+
+}
+.venstre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.højre{
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-self: center;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: white; /* Text color of the label */
+
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #44404042;
+    color: #fff;
+}
+
+input[type="button"] {
+    background-color: #ffffff4f;
+    color: white;
+    padding: 0 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 1rem;
+
+
+
+}
+
+input[type=file] { 
+    display: none; 
+}
+
+label[for=file] {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 0.5rem;
+    margin-top: 2rem;
+	justify-items: center;
+	align-content: center;
+	color: #ffffff;
+	border: 3px dotted #ffffff;
+	padding: 1.5rem;
+	color: #ffffff;
+	border-radius: 2em;
+	transition: 1s;
+	&:hover, &:focus, &:active {
+		background: #ffffff7c;
+		color: #fff;
+	}
+}
+.kassealle{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 22rem;
+    padding: 2rem;
+    background-color: rgba(231, 84, 121, 0.519);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    scale: 0.9;
+}
+.alleokasser{
+    display: flex;
+ 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    
+}
+
+
+ /* Mobile styles */
+@media (max-width: 768px) {
+    .delminder {
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+    .vl {
+        display: none;
+    }
+    .højre {
+        margin-top: 2rem;
+    }
+    .kasser{
+        scale: 0.8;
+}
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    input[type="text"] {
+        padding: 8px;
+    }
+    input[type="button"] {
+        padding: 8px 16px;
+        width: auto;
+    }
+    label[for="file"] {
+        padding: 1rem;
+    }
+}
