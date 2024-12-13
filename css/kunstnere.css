@@ -213,47 +213,49 @@ height: 100%;
 
     }
 
-   .intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-
-    /* Cirklerne kan evt. blive endnu mindre */
-    .cirkelbillede1, .cirkelbillede4, .cirkelbillede2, .cirkelbillede3 {
-        width: 10rem;
-        height: 10rem;
-    }
-    .cirkelbillede2, .cirkelbillede3 {
-        width: 12rem;
-        height: 12rem;
-        position: absolute;
-        z-index: -1;
-    }
-    .cirkelbilleder1{
-    margin: 5% 40% 5% 2%;
-    }
-    .cirkelbilleder2{
-        margin: 5% 0  5% 40%
-    }
-    
-    .afsnit1, .afsnit2 {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .monedenskunstner{
-    flex-direction: column;
-}
-.billedee{
    
-    width: 100%;
-    }
-    .text{
-      width: 100%;
-    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
     
+        /* Cirklerne kan evt. blive endnu mindre */
+        .cirkelbillede1, .cirkelbillede4, .cirkelbillede2, .cirkelbillede3 {
+            width: 10rem;
+            height: 10rem;
+        }
+        .cirkelbillede2, .cirkelbillede3 {
+            width: 12rem;
+            height: 12rem;
+            position: absolute;
+            z-index: -1;
+        }
+        .cirkelbilleder1{
+        margin: 5% 40% 5% 2%;
+        }
+        .cirkelbilleder2{
+            margin: 5% 0  5% 40%
+        }
+        
+        .afsnit1, .afsnit2 {
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .monedenskunstner{
+        flex-direction: column;
+    }
+    .billedee{
+       
+        width: 100%;
+        }
+        .text{
+          width: 100%;
+        }
+        
+      
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .afsnit1, .afsnit2 {
@@ -291,7 +293,11 @@ height: 100%;
         margin: -2rem auto;
     }
 
-   
+    .cirkelbilleder1, .cirkelbilleder2 {
+      
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
  }
 
  @media only screen and (min-width: 1024px){}
