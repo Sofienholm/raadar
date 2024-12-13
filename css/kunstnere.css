@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-image:
+    url(../images/kunstnerbaggrund.webp); max-width: 100%;
+    background-size: 100%;
+    background-repeat:repeat-y;
+  background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    width: 200%;
+    height: auto;
+    
+  }
+  .navbar .logo img {
+    width: 13rem;
+    height: auto;
+    /* Fjern margin-left: 40%; Lad flex centrere det */
+  }
+  .menupunkter {
+    background: hsla(333, 71%, 55%, 0.592);
+}
+
+h1,h2,h3,p{
+    color: #ffffff;
+}
+
+h1{
+margin: 5% auto;
+font-size: 2rem;
+min-width: 35rem;
+
+}
+h2{
+text-align: center;
+margin-bottom:1.5rem;
+
+}
+h3{
+font-size: 1rem;
+
+}
+p{
+    font-size: 1rem;
+  
+    line-height: 1.4;
+    margin: 0;
+    
+}
+.intro{
+    text-align: center;
+  margin: 0 auto 4%;
+
+    max-width: 30rem;
+    }
+
+.brugernavn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.brugernavn img{
+    width: 0.5rem;
+   
+}
+
+  .anmeldelse{
+    border-radius: 1rem;
+    color: #fff;
+    line-height: 1.4;
+   justify-items: center;
+  }
+  .anmeldelse img{
+    width: 100%;  /* tilpas størrelse */
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+  }
+  .kasse{
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    height: auto;
+    overflow:hidden;
+    padding: 1rem;
+    background-color: rgba(243, 170, 188, 0.158);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border: 2px solid white;
+    padding: 1%;
+    height: fit-content;
+    text-align: center;
+  }
+  .kasse p{
+    font-size: 0.8rem;
+  }
+  .kasser{
+    display: flex;
+     justify-content: center;
+     gap: 2rem;
+     margin-bottom: 10rem;
+     margin-left: 1rem;
+     margin-right: 1rem;
+   
+    
+  }
+  .monedenskunstner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid white;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    align-items: center;
+    gap: 5%;
+
+  }
+  .monedenskunstner img{
+width: 100%;
+height: 100%;
+    
+    
+    
+
+  }
+  .billedee{
+   
+  width: 50%;
+  }
+  .text{
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+  }
+  .text a{
+    color: white;
+    text-decoration: none;
+    display: block; /* Make the anchor a block element */
+    margin: 1rem auto; /* Center it horizontally */
+    width: fit-content;
+  }
+
+  @media only screen and (max-width: 600px){
+.monedenskunstner{
+    flex-direction: column;
+}
+.billedee{
+   
+    width: 100%;
+    }
+    .text{
+      width: 100%;
+    }
+
+  }
+ @media only screen and (min-width: 600px) and (max-width:1100px){}
+
+ @media only screen and (min-width: 600px){}

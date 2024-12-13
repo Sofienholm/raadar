@@ -2,7 +2,8 @@
 footer{
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
+    flex-wrap: wrap; /* Giver mulighed for at bryde til næste linje */
+    padding-top: 1%;
     padding-left: 4rem;
     padding-right:4rem ;
   padding-bottom: 2rem;
@@ -11,7 +12,8 @@ footer{
     color: rgb(168, 162, 162);
     text-align: left;
   }
- 
+ /* Juster selve div'erne inden i footeren så de får lidt margin */
+
   .folgospo{
     display: flex;
   
@@ -34,3 +36,33 @@ footer{
     font-size: 1rem;
     text-align: left;
   }
+
+  /* MEDIA QUERY - Ved mindre skærme ændrer vi layoutet */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; /* Stabler elementerne lodret */
+    padding-left: 2rem;
+    padding-right: 2rem;
+  text-align: left;
+    align-items: left;
+  }
+
+  footer > div {
+    margin: 1rem 0; /* Mindre margin på små skærme */
+  }
+
+  footer h3 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  footer p {
+    font-size: 1rem;
+      text-align: left;
+  }
+
+  .folgospo img {
+    width: 2rem; /* Mindre ikoner på små skærme */
+  
+  }
+}

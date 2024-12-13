@@ -16,31 +16,49 @@
     height: auto;
     
   }
+  .navbar .logo img {
+    width: 13rem;
+    height: auto;
+    /* Fjern margin-left: 40%; Lad flex centrere det */
+  }
+  .menupunkter {
+    background: hsla(333, 71%, 55%, 0.592);
+}
+h1,h2,h3,p{
+    color: #ffffff;
+}
 
 h1{
+margin: 5%;
+font-size: 2rem;
 
 }
 h2{
 text-align: center;
 margin-top: 3rem;
 margin-bottom:1.5rem;
-color:white;
+
 }
 h3{
 font-size: 1.5rem;
 }
 p{
     font-size: 0.8rem;
-    color: #fff;
-
+  
     line-height: 1.4;
     margin: 0;
     
 }
+.intro{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+    }
 
 .brugernavn{
     display: flex;
-    gap: 1rem;
+    align-items: center;
 
 }
 .brugernavn img{
@@ -55,9 +73,8 @@ p{
    justify-items: center;
   }
   .anmeldelse img{
-    width: 8rem;  /* tilpas størrelse */
-    height: 8rem;
- 
+    width: auto;  /* tilpas størrelse */
+    height: 50px;
     object-fit: cover;
     margin: 1rem;
   }
@@ -66,7 +83,8 @@ p{
     flex-direction: column;
     width: 20rem;
     height: 22rem;
-    padding: 2rem;
+    overflow:hidden;
+    padding: 1rem;
     background-color: rgba(231, 84, 121, 0.519);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
@@ -75,6 +93,11 @@ p{
     display: flex;
      justify-content: center;
      gap: 2rem;
+     margin-bottom: 10rem;
+     margin-left: 1rem;
+     margin-right: 1rem;
+   
+    
   }
   
   #midterstebil{
@@ -119,7 +142,10 @@ label {
     color: white; /* Text color of the label */
 
 }
-
+input#fname{
+  
+  ?
+}
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -127,11 +153,12 @@ input[type="text"] {
     border: 1px solid #ffffff;
     border-radius: 4px;
     background-color: #44404042;
-    color: #fff;
+  
+    pla
 }
 
 input[type="button"] {
-    background-color: #ffffff4f;
+    background-color: #fffff4f;
     color: white;
     padding: 0 2rem;
     border: 1px solid #ffffff;
@@ -161,8 +188,8 @@ label[for=file] {
 	border-radius: 2em;
 	transition: 1s;
 	&:hover, &:focus, &:active {
-		background: #ffffff7c;
-		color: #fff;
+		background: #a228287c;
+		color: #9d6d6d;
 	}
 }
 .kassealle{
@@ -182,19 +209,18 @@ label[for=file] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+ 
     margin-top: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
+   
     
 }
 
 
  /* Mobile styles */
-@media (max-width: 768px) {
+ @media only screen and (max-width: 600px){
     .delminder {
         flex-direction: column;
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
     .vl {
         display: none;
@@ -202,11 +228,13 @@ label[for=file] {
     .højre {
         margin-top: 2rem;
     }
+    .kasse{
+        
+    }
     .kasser{
-        scale: 0.8;
+        scale: 0.9;
+      
 }
-}
-@media (max-width: 480px) {
     body {
         padding: 10px;
     }
@@ -220,4 +248,56 @@ label[for=file] {
     label[for="file"] {
         padding: 1rem;
     }
+}
+.anmeldelse img{
+   width: 100%;
+   height: auto;
+}
+.anmeldelse p{
+    font-size: 0.7rem;
+}
+.kassealle p{
+    font-size: 0.9rem;
+}
+.bruger{
+    scale: 0.7;
+}
+.kassealle{
+scale: 0.9;
+}
+.alleokasser{
+    margin: 0%;
+}
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .delminder {
+        flex-direction: column;
+        margin: 0 10rem;
+    }
+    .vl {
+        display: none;
+    }
+    .højre {
+        margin-top: 2rem;
+    }
+}
+input[type="text"] {
+    padding: 8px;
+}
+input[type="button"] {
+    padding: 8px 16px;
+    width: auto;
+}
+label[for="file"] {
+    padding: 1rem;
+}
+
+
+@media only screen and (max-width: 600px){
+   .alleokasser{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.navbar .logo img {
+    width: 10rem; /* Mindre logo på små skærme */
+  }
 }
