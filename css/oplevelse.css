@@ -104,7 +104,7 @@ p{
     scale:1.1;
   }
 .vl{
-    border-left: 3px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
     height: 14rem;
 }
 .uploaded{
@@ -115,12 +115,12 @@ p{
     display: flex;
     justify-content: center;
     background-color: #ffffff2a;
-margin-left: 25%;
-margin-right: 25%;
+margin: 3% auto;
     border: 2px solid white;
     border-radius: 1rem;
     padding: 1rem;
-    gap: 5.5rem;
+    gap: 3rem;
+    max-width: fit-content;
 
 }
 .venstre{
@@ -142,10 +142,7 @@ label {
     color: white; /* Text color of the label */
 
 }
-input#fname{
-  
-  ?
-}
+
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -154,12 +151,14 @@ input[type="text"] {
     border-radius: 4px;
     background-color: #44404042;
   
-    pla
+    
 }
-
-input[type="button"] {
-    background-color: #fffff4f;
+input::placeholder {
     color: white;
+}
+input[type="button"] {
+    background-color: #ffffff4b;
+    color:#fff;
     padding: 0 2rem;
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -189,7 +188,7 @@ label[for=file] {
 	transition: 1s;
 	&:hover, &:focus, &:active {
 		background: #a228287c;
-		color: #9d6d6d;
+		color: #000000;
 	}
 }
 .kassealle{
@@ -220,7 +219,8 @@ label[for=file] {
  @media only screen and (max-width: 600px){
     .delminder {
         flex-direction: column;
-        margin: 0 1rem;
+  max-width: 70%;
+  align-items: center;
     }
     .vl {
         display: none;

@@ -141,7 +141,6 @@ gap: 10rem;
   align-self: flex-start;
   background-color: #f5124f;
   border-radius: 0 60px 60px 0;
-  width: 100%
   justify-items: center;
 }
 .citat{
@@ -171,44 +170,103 @@ padding: 1rem;
 color: white;
 text-decoration-line: none;
 padding-top: 2rem;
-
+}
+.omradar a:hover{
+  text-decoration: underline;
 }
 .eventss{
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .eventss h2{
   font-size: 4rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
 }
 .eventss a{
   text-decoration-line: none;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
  float: left;
- padding-top: 10%;
- margin-left: 10%;
-
+ padding-top: 5%;
+ margin-left: 7%;
+}
+.eventss a:hover{
+text-decoration: underline;
 }
 section.koncert {
   display: flex;
-border-top: 2px solid white;
-border-bottom: 2px solid white;
+border-top: 5px solid white;
+border-bottom: 2px solid rgba(255, 255, 255, 0);
   overflow: auto;
   white-space: nowrap;
-  padding: 2rem;
-  gap: 6rem;
-  margin-top: rem;
+
+  gap: 4rem;
+  max-width: max-content;
+  
+}
+.middle {
+  transition: .5s ease;
+    position: absolute;
+  
+    text-align: center;
+    opacity: 0;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    background-color: #00000079;
+}
+a.text{
+  margin-top: 50%;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+
 }
 .koncertbokse{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border: 0.1rem solid white;
-  width: 20rem;
-  height: 25rem;
+  border-top: 0;
+  min-width: 18rem;
+  height: fit-content;
+    white-space:wrap ;
+    position: relative;
+    
+    background-color: #f5124e21;
+}
+.koncertbokse:hover{
+  
+  transition: filter 0.5s ease ;
+  background-color: #ffffff80;
+  
+ 
+ 
+}
+.koncertbokse:hover .middle {
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 0.5s ease;
 }
 
+.koncert h3{
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+ 
+
+
+}
+.koncert p{
+  font-size: 1rem;
+  text-align: center;
+}
 section.koncert img {
-  padding-top: 10px;
-  width: 19rem;
-  height: auto;
+ width: 100%;  /* tilpas størrelse */
+    height: auto;
+    
 }
 .some{
   margin-top: 20rem;
@@ -298,11 +356,18 @@ margin-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 4rem;
   }
+  .eventss a{
+    font-size: 3rem;
+  }
   section.koncert img {
-    padding-top: 10px;
-    width: 15rem;}
+    
+    width: 100%;
+  height: auto;}
     .koncertbokse{
-      height: 23rem;
+      height: auto;
+    }
+    .koncert h3{
+     font-size: 4rem;
     }
   .some h2{
     margin-left: 60%;

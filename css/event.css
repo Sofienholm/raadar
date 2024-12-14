@@ -56,7 +56,7 @@ p {
   flex-wrap: wrap;   /* Tillader ombrydning på mindre skærme */
   justify-content: center;
   align-items: flex-start;
-  margin: 0 0 5rem 2rem; /* Juster marginer efter behov */
+  margin: 0 0 5rem rem; /* Juster marginer efter behov */
   gap: 2rem;
 }
 
@@ -83,20 +83,20 @@ main.kalender {
   max-width: 80%;
   min-width: 30%;
   height: 50rem;
-  transform: rotate(180deg); /* Roterer hele kalenderen */
+  
   border: 3px double white;
-  background-color: #f0f0f000;
+  background-color: #ff1e7fa9;
   border-radius: 5px;
-  padding-left: 10rem; /* Ekstra padding til venstre */
-  padding-right: 1rem; /* Ekstra padding til højre */
+  padding-left: 2rem; /* Ekstra padding til venstre */
+  padding-top: 2remrem; /* Ekstra padding til højre */
 }
 
 /* INTRO-SEKTION */
 .intro {
   align-items: center;
   gap: 2rem;
-  margin: 0 0 5rem 2rem;
-  max-width: 50rem;
+  margin: 0 0 5rem ;
+  max-width: 40rem;
 }
 
 /* EFEKT PÅ BILLEDER I KALENDER */
@@ -138,7 +138,7 @@ main.kalender {
 .jan {
   display: flex;
   flex-direction: column;
-  transform: rotate(180deg);
+
   height: fit-content;
 }
 
@@ -266,11 +266,10 @@ input[type=submit]:hover {
      overflow-x: hidden;
       width: 70%;
 padding: 0%;
-      transform: rotate(0deg); /* Overvej at fjerne rotation på mobil for at gøre det mere intuitivt */
-  }
+      }
 
   .jan {
-      transform: rotate(0deg); /* Fjern rotation på måneders indhold på mobil */
+   
   }
 
   .boks {
@@ -279,8 +278,8 @@ padding: 0%;
   }
 
   .flere {
-      width: 100%;
-      flex-wrap: wrap; /* Tillad ombrydning af bokse på mobil */
+    width: 100%;
+      flex-direction:column ; /* Tillad ombrydning af bokse på mobil */
       gap: 1rem;
   }
 }
@@ -311,7 +310,7 @@ padding: 0%;
   }
 
   .flere {
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 2rem;
   }
 }
