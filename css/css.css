@@ -129,12 +129,13 @@ color: #f0dcdc;
 
 .intro{
   display: flex; 
+  flex-direction: column;
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-top: 12rem;
-  height: 30rem;
+  height: fit-content;
 background-color: #e1958454;
-gap: 10rem;
+gap: 5rem;
  
 }
 .omradar{
@@ -142,24 +143,27 @@ gap: 10rem;
   background-color: #f5124f;
   border-radius: 0 60px 60px 0;
   justify-items: center;
+  margin-right:20%
 }
 .citat{
   align-self: flex-end;
   background-color:  #f5124f;
   border-radius: 60px 0 0 60px;
+  margin-left:40%
 }
 .citat p{
   padding-left: 5rem;
-  padding-right: 8rem;
+  padding-right: 5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
- 
+ font-size: 0.8rem;
   font-style: italic;
 }
 .omradar p{
-  padding-left: 8rem;
+  font-size: 0.8rem;
+  padding-left: 5rem;
   padding-right: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: rem;
 }
 .omradar h2{
   padding-top: 2rem;
