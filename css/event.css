@@ -23,7 +23,7 @@ body {
 }
 
 .menupunkter {
-  background: #ff7972aa;
+  background:rgba(247, 101, 101, 0.85);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
@@ -31,7 +31,7 @@ body {
 h1 {
   color: #ffffff;
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   margin-bottom: 5rem;
 }
 
@@ -56,8 +56,9 @@ p {
   flex-wrap: wrap;   /* Tillader ombrydning på mindre skærme */
   justify-content: center;
   align-items: flex-start;
-  margin: 0 0 5rem rem; /* Juster marginer efter behov */
+  margin: 0 0 5rem ; /* Juster marginer efter behov */
   gap: 2rem;
+  
 }
 
 /* EVENTKAL & KALENDER */
@@ -77,10 +78,9 @@ p {
 /* KALENDERENS SCROLLOMRÅDE */
 main.kalender {
   overflow: auto;
-  white-space: nowrap;
   padding: 1% 4%;
   width: 50rem;
-  max-width: 80%;
+  max-width: 50rem;
   min-width: 30%;
   height: 50rem;
   
@@ -89,6 +89,20 @@ main.kalender {
   border-radius: 5px;
   padding-left: 2rem; /* Ekstra padding til venstre */
   padding-top: 2remrem; /* Ekstra padding til højre */
+  
+  
+
+  /* Gennemsigtig baggrund, så man kan se baggrunden bagved */
+  background: rgba(255, 255, 255, 0.1);
+
+  /* Frostet glas-effekt */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  /* Evt. en svag kant eller skygge for at simulere glas */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgb(183, 48, 131) 0px 54px 55px, rgb(183, 48, 131) 0px -12px 30px,rgb(183, 48, 131) 0px 4px 6px,rgb(183, 48, 131) 0px 12px 13px, rgb(183, 48, 131) 0px -3px 5px;
+
 }
 
 /* INTRO-SEKTION */
@@ -158,17 +172,41 @@ div.flere {
 
 /* BOKSERNE MED EVENTINFO */
 .boks {
-  border: 1px solid white;
-  width: 15rem;
-  height: 20rem;
+  border: 3px solid white;
+  width: 17rem;
+  height: auto;
   margin-top: 1rem;
   flex-direction: column;
   display: flex; /* Så indhold i boksen kan alignes efter behov */
+ 
 }
-
+.boks p {
+  font-size: 0.9rem; /* Reducerer tekststørrelsen */
+  margin: 0; /* Fjerner yderligere marginer */
+  padding: 0.5rem; /* Tilføjer padding indenfor boksen */
+  line-height: 1.2; /* Justerer linjehøjden for at forbedre læsbarheden */
+  word-wrap: break-word; /* Tillader lange ord at bryde til næste linje */
+  text-align: center;
+  }
+  .boks h4 {
+    font-size: 1.5rem;
+   text-align: center;
+   color: white;
+  }
+  .boks h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border: 3px solid white;
+   padding: 1rem;
+  }
+  .boks h5:hover {
+  font-weight: 900;
+  }
 /* HORIZONTAL RULE STYLE */
 hr {
-  width: 100rem;
+  width: 45rem;
   border: 1px solid rgb(255, 255, 255);
 }
 
@@ -185,7 +223,7 @@ hr {
 }
 
 .kalender::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.344);
   border-radius: 50px;
 }
 

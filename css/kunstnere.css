@@ -22,7 +22,7 @@
     /* Fjern margin-left: 40%; Lad flex centrere det */
   }
   .menupunkter {
-    background: hsla(333, 71%, 55%, 0.592);
+    background: hsla(333, 71%, 55%, 0.85);
 }
 
 h1,h2,h3,p{
@@ -30,27 +30,35 @@ h1,h2,h3,p{
 }
 
 h1{
-margin: 5% auto;
-font-size: 2rem;
+margin: 5% auto 1%;
+font-size: 3rem;
 text-align: center;
 
 
 }
 h2{
 text-align: center;
-margin-bottom:1.5rem;
+margin-bottom:2rem;
 
 }
 h3{
-font-size: 1rem;
+font-size: 2rem;
+
 
 }
 p{
     font-size: 1rem;
-  
+  text-align: left;
     line-height: 1.4;
     margin: 0;
+}
     
+.kasser a, .kasser2 a{
+color: #ffffff;
+font-size: 0.8rem;
+}
+.kasser a:hover, .kasser2 a:hover{
+ color:  #4a52b7;
 }
 .afsnit1, .afsnit2 {
     text-align: center;
@@ -158,25 +166,27 @@ gap: 1rem;
     display: flex;
     flex-direction: column;
     min-width: 14rem;
-    height: auto;
+    height: 15rem;
     overflow:hidden;
     background-color: rgba(243, 170, 188, 0.311);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     border: 2px solid white;
     text-align: center;
+   
   }
   .kasseindlesflere :hover{
-    background-color: rgba(166, 138, 138, 0.39);
+   color:  #4a52b7;
   }
   .kasseindlesflere a{
     text-decoration: none;
     color: white;
     font-size: 2rem;
-    padding-top: 7rem;
-    padding-bottom: 9.5rem;
+    margin:auto auto;
+ 
   }
   .kasse p{
     font-size: 0.8rem;
+    text-align: left;
   }
   .kasser{
     display: flex;
@@ -187,6 +197,9 @@ gap: 1rem;
      margin-left: 1rem;
      margin-right: 1rem;
   }
+  .featured h2{
+    font-size: 3rem;
+  }
   .monedenskunstner{
     display: flex;
     flex-direction: row;
@@ -196,30 +209,55 @@ gap: 1rem;
     margin-right: 20%;
     align-items: center;
     gap: 5%;
-
+    padding: 1%;
+   
+  
   }
   .monedenskunstner img{
 width: 100%;
-height: 100%;
+height: auto;
   }
   .billedee{
-   
   width: 50%;
   }
   .text{
     width: 50%;
     padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+  
     color: white;
     align-items: center;
   }
+  .text h3{
+    font-size: 2rem;
+
+  }
+  .text p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    
+  }
   .text a{
     color: white;
-    text-decoration: none;
+   
     display: block; /* Make the anchor a block element */
     margin: 1rem auto; /* Center it horizontally */
     width: fit-content;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  .text a:hover{
+    color: #4a52b7;
+  }
+h6{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+   
+  }
+  .moenedensvalgte{
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-bottom: 2%;
   }
 
   .kasser2{
