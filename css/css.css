@@ -1,234 +1,247 @@
-/* CSS reset */
+/* CSS reset for at fjerne standard margener og padding samt sætte box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 5 farver */
+/* Definerer farver som CSS-variabler for nem genbrug */
 :root {
   --hvid: #f4f9e3;
   --sort: #121112;
-  --farveEn: #92efa1; 
-  --farveTo: #2e8d33; 
-  --farveKontrast: #9b1a1a; 
+  --farveEn: #92efa1;
+  --farveTo: #2e8d33;
+  --farveKontrast: #9b1a1a;
 }
-body{
-  background-image:
-  url(../images/endeligmedfigur.webp); max-width: 100%;
-  background-repeat:no-repeat;
-background-size: cover;
-  font-family: 'Poppins', sans-serif;
+
+/* BODY STYLING */
+body {
+  background-image: url(../images/endeligmedfigur.webp); /* Baggrundsbillede */
+  background-size: cover; /* Fylder hele skærmen og skalerer ved resize */
+  background-repeat: no-repeat; /* Ingen gentagelse af baggrundsbillede */
+  font-family: 'Poppins', sans-serif; /* Standard font */
+  max-width: 100%;
 }
+
+/* MENUPUNKTER */
 .menupunkter {
-  background: hsla(349, 90%, 56%, 0.85);}
+  background: hsla(349, 90%, 56%, 0.85); /* Semi-transparent baggrund */
+}
 
- h1{
-color: #fff;
-font-size: 2rem;
-position: absolute;
-top: 15%;
-left: 33%;
-line-height: 1;
-transform: translate(-40%, -50%);
+/* TYPOGRAFI */
+h1, h2, h3, p {
+  color: #fff; /* Ensartet farve for overskrifter og paragraf */
+}
 
-font-style: italic;
-
- }
- h2{
+h1 {
   color: #fff;
-font-size: 2rem;
-padding: 1rem;
-text-align: center;
- }
+  font-size: 2rem;
+  position: absolute; /* Absolut positionering for præcis placering */
+  top: 15%;
+  left: 33%;
+  line-height: 1;
+  transform: translate(-40%, -50%); /* Justerer positionen præcist */
+  font-style: italic; /* Kursiv stil */
+}
 
- p{
+h2 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center; /* Centreret tekst */
+}
+
+p {
   color: #fff;
   font-size: 1rem;
   padding: 1rem;
- }
+}
 
-
- main{
-  display: flex;
+/* MAIN LAYOUT */
+main {
+  display: flex; /* Brug af flexbox til layout */
   margin-left: 10%;
   margin-right: 10%;
-  align-items:flex-start;
- }
- .venstre{
+  align-items: flex-start; /* Justerer elementer til toppen */
+}
 
-  justify-content: center;
- 
- }
- .venstre img{
+/* VENSTRE SIDE */
+.venstre {
+  justify-content: center; /* Centrerer indholdet horisontalt */
+}
+
+.venstre img {
   width: 100%;
   height: auto;
-  padding-top: 2rem;
+  padding-top: 2rem; /* Tilføjer top padding til billedet */
+}
 
- }
- .højre{
+/* HØJRE SIDE */
+.højre {
   display: flex;
+  justify-content: center; /* Centrerer indholdet horisontalt */
+  padding-right: 0;
+  gap: 1rem; /* Mellemrum mellem elementer */
+  align-items: center; /* Vertikal centreret */
+}
 
-  justify-content: center;
-  padding-right: 0 ;
-gap: 1rem;
-align-items: center;
- }
-
-.midterbillede{
+/* MIDTERBILLEDE */
+.midterbillede {
   width: 19rem;
   height: 22rem;
-
-
 }
-.midterbillede img{
-  width: 100%;  /* tilpas størrelse */
-    height: 100%;
-    object-fit: cover;
 
-  box-shadow:  0 0 40px 0 rgba(0, 0, 0, 0.779);
+.midterbillede img {
+  width: 100%; /* Tilpasser bredde */
+  height: 100%; /* Tilpasser højde */
+  object-fit: cover; /* Sikrer billedet fylder containeren uden at ændre proportioner */
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.779); /* Tilføjer skygge for dybde */
 }
-.yderbillede{
+
+/* YDERBILLEDE */
+.yderbillede {
   width: 17rem;
   height: 20rem;
- 
-
-
-}
-.yderbillede img{
-  width: 100%;  /* tilpas størrelse */
-    height: 100%;
-    object-fit: cover;
-  box-shadow:  0 0 40px 0 rgba(0, 0, 0, 0.779);
-
 }
 
- .knapper{
-  display: flex;
+.yderbillede img {
+  width: 100%; /* Tilpasser bredde */
+  height: 100%; /* Tilpasser højde */
+  object-fit: cover; /* Sikrer billedet fylder containeren uden at ændre proportioner */
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.779); /* Tilføjer skygge for dybde */
+}
+
+/* KNAPPER */
+.knapper {
+  display: flex; /* Brug af flexbox til knapper */
   margin-left: 13rem;
   margin-top: 1rem;
-  gap: 5%;
-
+  gap: 5%; /* Mellemrum mellem knapper */
   width: 30rem;
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: bold;
-
-
-  
- }
-.knapper a{
-  text-decoration-line: none;
-color: #f0dcdc;
-  padding: 1rem;
-  background-color: #ffffff59;
-
- }
- .knapper a:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.intro{
-  display: flex; 
-  flex-direction: column;
+.knapper a {
+  text-decoration-line: none; /* Fjernet standard understregning */
+  color: #f0dcdc; /* Knapfarve */
+  padding: 1rem;
+  background-color: #ffffff59; /* Semi-transparent baggrund */
+}
+
+.knapper a:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+              0 17px 50px 0 rgba(0, 0, 0, 0.19); /* Skygge ved hover */
+}
+
+/* INTRO SEKTION */
+.intro {
+  display: flex;
+  flex-direction: column; /* Stabler indholdet vertikalt */
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-top: 12rem;
   height: fit-content;
-background-color: #e1958454;
-gap: 5rem;
- 
+  background-color: #e1958454; /* Semi-transparent baggrund */
+  gap: 5rem; /* Mellemrum mellem elementer */
 }
-.omradar{
+
+/* OMRAEDER SECTION */
+.omradar {
   align-self: flex-start;
-  background-color: #f5124f;
-  border-radius: 0 60px 60px 0;
+  background-color: #f5124f; /* Baggrundsfarve */
+  border-radius: 0 60px 60px 0; /* Runde kanter */
   justify-items: center;
-  margin-right:20%
+  margin-right: 20%;
 }
-.citat{
+
+.citat {
   align-self: flex-end;
-  background-color:  #f5124f;
-  border-radius: 60px 0 0 60px;
-  margin-left:40%
+  background-color: #f5124f; /* Baggrundsfarve */
+  border-radius: 60px 0 0 60px; /* Runde kanter */
+  margin-left: 40%;
 }
-.citat p{
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
- font-size: 0.9rem;
- 
+
+.citat p {
+  padding: 3rem 5rem;
+  font-size: 0.9rem;
 }
-.omradar p{
+
+.omradar p {
   font-size: 0.8rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: rem;
+  padding: 0 5rem 1rem 5rem;
 }
-.omradar h2{
+
+.omradar h2 {
+  padding: 2rem 0 0 0;
+}
+
+.omradar a {
+  padding: 1rem;
+  color: white;
+  text-decoration-line: none;
   padding-top: 2rem;
-  padding-bottom: 0;
 }
-.omradar a{
-padding: 1rem;
-color: white;
-text-decoration-line: none;
-padding-top: 2rem;
+
+.omradar a:hover {
+  text-decoration: underline; /* Understregning ved hover */
 }
-.omradar a:hover{
-  text-decoration: underline;
+
+/* EVENTS SECTION */
+.eventss {
+  margin: 5rem 0;
 }
-.eventss{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-.eventss h2{
+
+.eventss h2 {
   font-size: 4rem;
   padding-bottom: 2rem;
   margin-top: 5rem;
 }
-.eventss a{
-  text-decoration-line: none;
+
+.eventss a {
+  text-decoration-line: none; /* Fjernet standard understregning */
   color: white;
   font-size: 2.5rem;
   font-weight: 800;
- float: left;
- padding-top: 5%;
- margin-left: 7%;
+  float: left;
+  padding-top: 5%;
+  margin-left: 7%;
 }
-.eventss a:hover{
-text-decoration: underline;
+
+.eventss a:hover {
+  text-decoration: underline; /* Understregning ved hover */
 }
+
+/* KONCERT SECTION */
 section.koncert {
   display: flex;
-border-top: 5px solid white;
-border-bottom: 2px solid rgba(255, 255, 255, 0);
-  overflow: auto;
-  white-space: nowrap;
-
-  gap: 4rem;
+  border-top: 5px solid white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  overflow: auto; /* Tillader scroll hvis nødvendigt */
+  white-space: nowrap; /* Forhindrer linjeskift */
+  gap: 4rem; /* Mellemrum mellem elementer */
   max-width: max-content;
-  
 }
+
 .middle {
-  transition: .5s ease;
-    position: absolute;
-  
-    text-align: center;
-    opacity: 0;
-    text-decoration: none;
-    height: 100%;
-    width: 100%;
-    background-color: #00000079;
+  transition: 0.5s ease; /* Glidende overgang */
+  position: absolute;
+  text-align: center;
+  opacity: 0; /* Skjult indtil hover */
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  background-color: #00000079; /* Semi-transparent baggrund */
 }
-a.text{
+
+a.text {
   margin-top: 50%;
   z-index: 1;
   text-align: center;
   text-decoration: none;
-
 }
-.koncertbokse{
+
+.koncertbokse {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -236,53 +249,52 @@ a.text{
   border-top: 0;
   min-width: 18rem;
   height: fit-content;
-    white-space:wrap ;
-    position: relative;
-    
-    background-color: #f5124e21;
+  white-space: wrap;
+  position: relative;
+  background-color: #f5124e21; /* Semi-transparent baggrund */
 }
-.koncertbokse:hover{
-  
-  transition: filter 0.5s ease ;
-  background-color: #ffffff80;
-  
- 
- 
+
+.koncertbokse:hover {
+  transition: filter 0.5s ease;
+  background-color: #ffffff80; /* Ændret baggrund ved hover */
 }
+
 .koncertbokse:hover .middle {
-  opacity: 1;
+  opacity: 1; /* Viser overlay ved hover */
   z-index: 1;
   transition: opacity 0.5s ease;
 }
 
-.koncert h3{
+.koncert h3 {
   font-size: 4rem;
   text-align: center;
   color: white;
- 
-
-
 }
-.koncert p{
+
+.koncert p {
   font-size: 1rem;
   text-align: center;
 }
+
 section.koncert img {
- width: 100%;  /* tilpas størrelse */
-    height: auto;
-    
+  width: 100%; /* Tilpasser bredde */
+  height: auto;
 }
-.some{
+
+/* SOME SECTION */
+.some {
   margin-top: 20rem;
   display: flex;
   flex-direction: column;
 }
-.some h2{
-  color: #fff;
-font-size: 5rem;
-margin-left: 70%;
 
+.some h2 {
+  color: #fff;
+  font-size: 5rem;
+  margin-left: 70%;
 }
+
+/* INSTABIL SECTION */
 .instabil {
   display: flex;
   flex-wrap: wrap;
@@ -297,150 +309,255 @@ margin-left: 70%;
   width: 20rem;
   height: auto;
 }
+
 .navbar .logo img {
   width: 13rem;
   height: auto;
-  /* Fjern margin-left: 40%; Lad flex centrere det */
 }
 
+/* Media Queries */
 
-
-@media only screen and (max-width: 768px){
-  body{ background-image: url(../images/mobil2baggrund.webp);
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/mobil2baggrund.webp); /* Ændrer baggrundsbillede til mobil */
   }
+
   .navbar .logo img {
     width: 5rem; /* Mindre logo på små skærme */
   }
-  main{
-    flex-direction: column;
-    scale: 0.5;
+
+  main {
+    flex-direction: column; /* Stabler indholdet vertikalt */
+    transform: scale(0.5); /* Skalerer hovedsektionen */
     gap: 10rem;
     align-items: center;
   }
-  .venstre img{
-scale: 2;
-    padding-top: rem;
-    margin-top: -10rem;
-   }
-   .højre{
+
+  .venstre img {
+    transform: scale(2); /* Forstørrer billede */
+    padding-top: 0;
+    margin-top: -10rem; /* Flytter billede opad */
+  }
+
+  .højre {
     padding-left: 10%;
     padding-right: 10%;
-   }
-   .knapper {
+  }
+
+  .knapper {
     margin: auto;
-margin-top: -5rem;
-justify-content: center;
+    margin-top: -5rem;
+    justify-content: center;
     gap: 2rem;
     max-width: 100%;
     font-size: 1rem;
   }
-  .omradar{
-margin-right: 2rem;
+
+  .omradar {
+    margin-right: 2rem;
   }
-  .citat{
+
+  .citat {
     margin-left: 2rem;
   }
-  .citat p{
-    padding: 2rem;
-   
-    
-  }
-  .omradar p{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-  }
-  .omradar h2{
-    padding-top: 2rem;
-    padding-bottom: 0;
-  }
-  .intro{
- flex-direction: column;
-  gap: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
-  }
-  .eventss a{
-    font-size: 2rem;
-  
-  }
-  section.koncert img {
-    
-    width: 100%;
-  height: auto;}
-    .koncertbokse{
-      height: auto;
-    }
-    .koncert h3{
-     font-size: 4rem;
-    }
-  .some h2{
-    margin:0 auto;
-    font-size: 2rem;
-  }
-  .some{
-    margin-top: 5rem;
-  }
- 
 
-  .instabil #en, .instabil #to, .instabil #tre, .instabil #fire {
-  width: 15rem;
-  height: auto;
+  .citat p {
+    padding: 2rem;
+  }
+
+  .omradar p {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .omradar h2 {
+    padding: 2rem 0 0 0;
+  }
+
+  .intro {
+    flex-direction: column; /* Stabler indholdet vertikalt */
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .eventss a {
+    font-size: 2rem; /* Mindre knapstørrelse på mobil */
+  }
+
+  section.koncert img {
+    width: 100%;
+    height: auto;
+  }
+
+  .koncertbokse {
+    height: auto; /* Justerer højde på mobil */
+  }
+
+  .koncert h3 {
+    font-size: 4rem;
+  }
+
+  .some h2 {
+    margin: 0 auto;
+    font-size: 2rem; /* Mindre overskrift på mobil */
+  }
+
+  .some {
+    margin-top: 5rem; /* Mindre margin på mobil */
+  }
+
+  .instabil #en,
+  .instabil #to,
+  .instabil #tre,
+  .instabil #fire {
+    width: 15rem; /* Mindre billeder på mobil */
+    height: auto;
+  }
+
+  /* Justeringer for .kasser */
+  .kasser {
+    transform: scale(0.9); /* Skalerer kasserne */
+  }
+
+  body {
+    padding: 10px; /* Tilføjer indvendig padding til kroppen */
+  }
+
+  input[type="text"] {
+    padding: 8px; /* Reducerer padding på mobil */
+  }
+
+  input[type="button"] {
+    padding: 8px 16px;
+    width: auto; /* Justerer bredde for mobil */
+  }
+
+  label[for="file"] {
+    padding: 1rem;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .anmeldelse img {
+    width: 100%;
+    height: auto;
+  }
+
+  .anmeldelse p {
+    font-size: 0.7rem; /* Mindre tekst på mobil */
+  }
+
+  .kassealle p {
+    font-size: 0.9rem; /* Justerer tekststørrelse */
+  }
+
+  .bruger {
+    transform: scale(0.7); /* Skalerer brugersektionen */
+  }
+
+  .kassealle {
+    transform: scale(0.9); /* Skalerer kassealle */
+  }
+
+  .alleokasser {
+    margin: 0; /* Fjern margin for bedre layout på mobil */
+  }
 }
-}
-@media only screen and (min-width: 768px) and (max-width:1024px){
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar .logo img {
-    width: 8rem; /* Mindre logo på små skærme */
+    width: 8rem; /* Mindre logo på mellemstore skærme */
   }
-  .citat p{
-    padding-left: 5rem;
-    padding-right: 3rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-   
-    font-style: italic;
+
+  .citat p {
+    padding: 1.5rem 3rem 1.5rem 5rem;
+    font-style: italic; /* Kursiv stil */
   }
-  .omradar p{
-    padding-left: 3rem;
-    padding-right: 5rem;
-    padding-bottom: 2rem;
+
+  .omradar p {
+    padding: 2rem 5rem 2rem 3rem;
   }
-  .omradar h2{
-    padding-top: 2rem;
-    padding-bottom: 0;
+
+  .omradar h2 {
+    padding: 2rem 0 0 0;
   }
-  .intro{
+
+  .intro {
     flex-direction: column;
     gap: 2rem;
   }
-  .omradar{
+
+  .omradar {
     margin-right: 2rem;
-      }
-      .citat{
-        margin-left: 2rem;}
-  
-        .knapper{
-          
-margin-left: 15%;
+  }
+
+  .citat {
+    margin-left: 2rem;
+  }
+
+  .knapper {
+    margin-left: 15%;
     gap: 9%;
     max-width: 100%;
     font-size: 1rem;
-        }
-        .some h2{
-          margin:0 auto;
-          font-size: 2rem;
-        }
-}
-@media only screen and (min-width: 1024px){
-  .højre{
-    width: 50%;
-    float: left;
-  }
-  .venstre{
-  
-    justify-content: center;
-    width: 50%;
-    float: right;
   }
 
+  .some h2 {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+
+  /* Justér cirkelbilleder så de skalerer ned og ikke overlapper skærmen */
+  .cirkelbillede1,
+  .cirkelbillede4,
+  .cirkelbillede2,
+  .cirkelbillede3 {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .cirkelbillede2,
+  .cirkelbillede3 {
+    width: 14rem;
+    height: 14rem;
+    position: static; /* Fjern absolut positionering på mindre skærme */
+    z-index: -1;
+    margin: -2rem auto;
+  }
+
+  .cirkelbilleder1,
+  .cirkelbilleder2 {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+
+  .kasser {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .kasser2 {
+    padding: 5% 5%;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1024px) {
+  .højre {
+    width: 50%;
+    float: left; /* Justerer bredde og placering på desktop */
+  }
+
+  .venstre {
+    justify-content: center;
+    width: 50%;
+    float: right; /* Justerer bredde og placering på desktop */
+  }
+
+  .kasser2 {
+    margin: 0 6% 10rem 6%;
+    gap: 3rem; /* Øget mellemrum mellem kasser på desktop */
+  }
 }

@@ -12,53 +12,65 @@ body {
   background-repeat: repeat-y;
   font-family: 'Poppins', sans-serif;
   justify-content: center;
-  width: 100%; /* Du bruger 200%, men overvej 100% for bedre responsivitet */
+  width: 100%; /* Justeret til 100% for bedre responsivitet */
   height: auto;
+  color: white; /* Ensartet tekstfarve */
 }
 
 /* NAVBAR */
 .navbar .logo img {
   width: 13rem;
   height: auto;
+  margin-bottom: 2rem;
 }
 
+/* MENUPUNKTER */
 .menupunkter {
-  background:rgba(247, 101, 101, 0.85);
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background: rgba(247, 101, 101, 0.85); /* Semi-transparent baggrund */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge for dybde */
 }
 
 /* TYPOGRAFI */
+h1, h2, h3, p, h6 {
+  color: #ffffff; /* Ensartet farve for alle overskrifter og paragraf */
+}
+
 h1 {
-  color: #ffffff;
   font-size: 3rem;
   text-align: left;
-  margin-bottom: 5rem;
+  margin: 5% 20% 5rem; /* Justeret margin for spacing */
 }
 
 h2 {
-  color: #ffffff;
+  font-size: 2rem; /* Beholder font-størrelsen fra body */
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 h3 {
-  color: white;
-  text-align: center;
   font-size: 4rem;
+  text-align: center;
+}
+
+h6 {
+  font-size: 4rem;
+  text-align: center;
 }
 
 p {
-  color: white;
   font-size: 1rem;
+  text-align: left;
+  line-height: 1.4;
 }
 
 /* LAYOUT FOR INDHOLD */
 .indhold {
   display: flex;
-  flex-wrap: wrap;   /* Tillader ombrydning på mindre skærme */
+  flex-wrap: wrap; /* Tillader ombrydning på mindre skærme */
   justify-content: center;
   align-items: flex-start;
-  margin: 0 0 5rem ; /* Juster marginer efter behov */
-  gap: 2rem;
-  
+  margin-bottom: 5rem; /* Plads under indholdet */
+  gap: 2rem; /* Mellemrum mellem elementerne */
 }
 
 /* EVENTKAL & KALENDER */
@@ -66,7 +78,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
+  max-width: 100%; /* Fylder hele bredden */
 }
 
 .kalender {
@@ -77,40 +89,31 @@ p {
 
 /* KALENDERENS SCROLLOMRÅDE */
 main.kalender {
-  overflow: auto;
-  padding: 1% 4%;
+  overflow: auto; /* Scrollbar hvis nødvendigt */
+  padding: 2rem; /* Kombineret padding for indre afstand */
   width: 50rem;
   max-width: 50rem;
   min-width: 30%;
   height: 50rem;
-  
-  border: 1px solid white;
-  background-color: #ff1e7fa9;
-  border-radius: 5px;
-  padding-left: 2rem; /* Ekstra padding til venstre */
-  padding-top: 2remrem; /* Ekstra padding til højre */
-  
-  
-
-  /* Gennemsigtig baggrund, så man kan se baggrunden bagved */
-  background: rgba(255, 255, 255, 0.1);
-
-  /* Frostet glas-effekt */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-
-  /* Evt. en svag kant eller skygge for at simulere glas */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: rgb(183, 48, 131) 0px 54px 55px, rgb(183, 48, 131) 0px -12px 30px,rgb(183, 48, 131) 0px 4px 6px,rgb(183, 48, 131) 0px 12px 13px, rgb(183, 48, 131) 0px -3px 5px;
-
+  background: rgba(255, 255, 255, 0.1); /* Gennemsigtig baggrund */
+  backdrop-filter: blur(20px); /* Frostet glas-effekt */
+  -webkit-backdrop-filter: blur(20px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Let hvid kant */
+  box-shadow: rgb(183, 48, 131) 0px 54px 55px, 
+              rgb(183, 48, 131) 0px -12px 30px, 
+              rgb(183, 48, 131) 0px 4px 6px, 
+              rgb(183, 48, 131) 0px 12px 13px, 
+              rgb(183, 48, 131) 0px -3px 5px; /* Flerlagede skygger */
+  border-radius: 5px; /* Runde hjørner */
 }
 
 /* INTRO-SEKTION */
 .intro {
+  display: flex;
   align-items: center;
-  gap: 2rem;
-  margin: 0 0 5rem ;
-  max-width: 40rem;
+  gap: 2rem; /* Mellemrum mellem elementerne */
+  margin-bottom: 5rem; /* Plads under sektionen */
+  max-width: 40rem; /* Maksimal bredde */
 }
 
 /* EFEKT PÅ BILLEDER I KALENDER */
@@ -123,91 +126,102 @@ main.kalender {
 .efekt img {
   display: block;
   width: 100%;
-  filter: grayscale(100%) blur(2px);
-  transition: filter 0.5s ease;
+  filter: grayscale(100%) blur(2px); /* Gråtonet og sløret */
+  transition: filter 0.5s ease; /* Glidende overgang ved hover */
 }
 
 .efekt:hover img {
-  filter: none;
+  filter: none; /* Fjerner filter ved hover */
 }
 
 .efekt .overlag {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   opacity: 1;
-  transition: opacity 0.5s ease;
-  color: white; 
+  transition: opacity 0.5s ease; /* Glidende overgang ved hover */
+  color: white;
   font-size: 3rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent sort baggrund */
 }
 
 .efekt:hover .overlag {
-  opacity: 0;
+  opacity: 0; /* Gør overlaget usynligt ved hover */
 }
 
-/* MÅNEDSBLOKKE (JAN) */
+/* MÅNEDSBLOKKE  */
 .jan {
   display: flex;
   flex-direction: column;
-
-  height: fit-content;
+  height: fit-content; /* Tilpasser højden til indholdet */
 }
 
 .jan h2 {
   font-size: 3rem;
-  margin: -1rem 0;
+  margin: -1rem 0; /* Justeret margin for tættere placering */
 }
 
 /* FLERE BOKSE VED SIDEN AF HINANDEN I MÅNEDEN */
-div.flere {
+.flere {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 3rem; /* Mellemrum mellem bokse */
   width: 35rem;
   height: 20rem;
 }
 
 /* BOKSERNE MED EVENTINFO */
 .boks {
+  display: flex;
+  flex-direction: column;
   border: 3px solid white;
   width: 17rem;
-  height: auto;
   margin-top: 1rem;
-  flex-direction: column;
-  display: flex; /* Så indhold i boksen kan alignes efter behov */
- 
-}
-.boks p {
-  font-size: 0.9rem; /* Reducerer tekststørrelsen */
-  margin: 0; /* Fjerner yderligere marginer */
-  padding: 0.5rem; /* Tilføjer padding indenfor boksen */
-  line-height: 1.2; /* Justerer linjehøjden for at forbedre læsbarheden */
-  word-wrap: break-word; /* Tillader lange ord at bryde til næste linje */
+  padding: 0.5rem; /* Indvendig afstand */
+  background-color: rgba(243, 170, 188, 0.158); /* Let baggrund */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge */
+  border-radius: 5px; /* Runde hjørner */
   text-align: center;
-  }
-  .boks h4 {
-    font-size: 1.5rem;
-   text-align: center;
-   color: white;
-  }
-  .boks h5 {
-    font-size: 1.2rem;
-    text-align: center;
-    color: white;
-    font-weight: 600;
-    border: 3px solid white;
-   padding: 1rem;
-  }
-  .boks h5:hover {
-  font-weight: 900;
-  }
+}
+
+.boks p {
+  font-size: 0.9rem; /* Reduceret tekststørrelse */
+  margin: 0; /* Fjernet margin */
+  line-height: 1.2; /* Forbedret læsbarhed */
+  word-wrap: break-word; /* Bryder lange ord */
+  text-align: center;
+}
+
+.boks h4,
+.boks h5 {
+  color: white;
+  text-align: center;
+}
+
+.boks h4 {
+  font-size: 1.5rem;
+}
+
+.boks h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 3px solid white;
+  padding: 1rem; /* Indvendig afstand */
+}
+
+.boks h5:hover {
+  font-weight: 900; /* Øget vægt ved hover */
+}
+
 /* HORIZONTAL RULE STYLE */
 hr {
   width: 45rem;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255); /* Hvid linje */
 }
 
 /* SCROLLBAR-STYLING */
@@ -217,14 +231,14 @@ hr {
   background-size: 50px;
 }
 
-.kalender::-webkit-scrollbar-thumb:hover {
-  background: #756b6b;
-  border: 1px solid white;
-}
-
 .kalender::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.344);
   border-radius: 50px;
+}
+
+.kalender::-webkit-scrollbar-thumb:hover {
+  background: #756b6b;
+  border: 1px solid white;
 }
 
 .kalender::-webkit-scrollbar {
@@ -240,34 +254,32 @@ form {
   color: #000;
   margin: 5rem auto;
   max-width: 40rem;
-  background: rgba(255,255,255,0.1); /* Tilføj en let baggrund */
+  background: rgba(255, 255, 255, 0.1); /* Let baggrund */
   padding: 1rem;
 }
 
 .container1 {
   padding: 12px;
-  background-color: #ffffff09;
+  background-color: #ffffff09; /* Semi-transparent baggrund */
   align-items: center;
   text-align: center;
   color: #000;
 }
 
-.container1 h2 {
-  color: #ffffff;
-}
-
+.container1 h2,
 .container1 p {
   color: #ffffff;
 }
 
 /* INPUT FIELDS */
-input[type=text], input[type=submit] {
+input[type=text],
+input[type=submit] {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
   border: 1px solid #ffffff;
   box-sizing: border-box;
-  background-color: #ffffff0b;
+  background-color: rgba(255, 255, 255, 0.07); /* Let baggrund */
   color: white;
 }
 
@@ -276,13 +288,13 @@ input::placeholder {
 }
 
 input[type=submit] {
-  background-color: #ffffff2c;
+  background-color: rgba(255, 255, 255, 0.17); /* Let baggrund */
   color: #ffffff;
   border: 1px solid white;
 }
 
 input[type=submit]:hover {
-  opacity: 0.8;
+  opacity: 0.8; /* Let gennemsigtighed ved hover */
 }
 
 /* MEDIA QUERIES */
@@ -290,70 +302,69 @@ input[type=submit]:hover {
 /* MOBIL: UNDER 767PX */
 @media (max-width: 767px) {
   .navbar .logo img {
-      width: 10rem;
+    width: 10rem; /* Mindre logo på små skærme */
   }
 
   /* Mindre plads, fjern store marginer */
   .intro {
-      max-width: 80%;
-      margin: 1rem auto;
+    max-width: 80%;
+    margin: 1rem auto;
   }
 
-  /* Kalender kan evt. fylde hele skærmens bredde */
+  /* Kalender fylder mere på små skærme */
   main.kalender {
-     overflow-x: hidden;
-      width: 70%;
-padding: 0%;
-      }
-
-  .jan {
-   
+    overflow-x: hidden;
+    width: 70%;
+    padding: 0;
   }
 
+  /* Juster bokser til fuld bredde */
   .boks {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 
+  /* Omarranger bokse til kolonne */
   .flere {
     width: 100%;
-      flex-direction:column ; /* Tillad ombrydning af bokse på mobil */
-      gap: 1rem;
+    flex-direction: column; /* Tillad ombrydning af bokse på mobil */
+    gap: 1rem;
   }
 }
 
 /* TABLET: MELLEM 768PX OG 1024PX */
 @media (min-width: 768px) and (max-width: 1024px) {
+  /* Omarranger indhold til kolonne */
   .indhold {
-      flex-direction: column;
+    flex-direction: column;
   }
 
+  /* Juster margin for formularen */
   form {
-      margin: 5rem 0;
-      max-width: 40rem;
+    margin: 5rem 0;
+    max-width: 40rem;
   }
 
-  .eventkal {
-      /* Juster om nødvendigt */
-  }
-
+  /* Juster intro sektion */
   .intro {
-      max-width: 80%;
-      margin: 1rem auto;
+    max-width: 80%;
+    margin: 1rem auto;
   }
 
+  /* Juster boks bredde */
   .boks {
-      width: 12rem;
-      height: auto;
+    width: 12rem;
+    height: auto;
   }
 
+  /* Omarranger bokse med mere mellemrum */
   .flere {
-      flex-direction: column;
-      gap: 2rem;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
 /* DESKTOP: OVER 1024PX */
 @media (min-width: 1024px) {
-  /* Du kan tilføje specifik styling for store skærme her, hvis ønsket */
+  /* Her kan du tilføje specifik styling for store skærme, hvis ønsket */
 }

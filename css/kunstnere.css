@@ -1,386 +1,476 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body{
-    background-image:
-    url(../images/kunstnerbaggrund.webp); max-width: 100%;
-    background-size: 100%;
-    background-repeat:repeat-y;
-  background-size: cover;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
-    width: 200%;
-    height: auto;
-    
-  }
-  .navbar .logo img {
-    width: 13rem;
-    height: auto;
-    /* Fjern margin-left: 40%; Lad flex centrere det */
-  }
-  .menupunkter {
-    background: hsla(333, 71%, 55%, 0.85);
+/* RESET OG BASIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1,h2,h3,p{
-    color: #ffffff;
+/* BODY STYLING */
+body {
+  background-image: url(../images/kunstnerbaggrund.webp);
+  background-size: cover; /* Fylder hele skærmen og skalerer ved resize */
+  background-repeat: repeat-y;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  height: auto;
+  color: #ffffff; /* Ensartet tekstfarve */
 }
 
-h1{
-margin: 5% auto 1%;
-font-size: 3rem;
-text-align: center;
-
-
+/* NAVBAR */
+.navbar .logo img {
+  width: 13rem;
+  height: auto;
+  /* Fjern margin-left: 40%; Lad flex centrere det */
 }
-h2{
-text-align: center;
-margin-bottom:2rem;
 
+.menupunkter {
+  background: hsla(333, 71%, 55%, 0.85); /* Semi-transparent baggrund */
 }
-h3{
-font-size: 2rem;
 
-
+/* TYPOGRAFI */
+h1, h2, h3, p {
+  color: #ffffff; /* Ensartet farve for overskrifter og paragraf */
 }
-p{
-    font-size: 1rem;
+
+h1 {
+  margin: 5% auto 1%; /* Spacing omkring h1 */
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
   text-align: left;
-    line-height: 1.4;
-    margin: 0;
+  line-height: 1.4;
+  margin: 0; /* Fjerner yderligere margin */
 }
-    
-.kasser a, .kasser2 a{
-color: #ffffff;
-font-size: 0.8rem;
-}
-.kasser a:hover, .kasser2 a:hover{
- color:  #4a52b7;
-}
+
+/* LAYOUT FOR INDHOLD */
 .afsnit1, .afsnit2 {
-    text-align: center;
-  margin: 0 auto ;
-display: flex;
-justify-content: center;
-    }
-    .afsnit1 p, .afsnit2 p{
-        min-width: 20%;
-        max-width: 30rem;
-        text-align: left;
-    }
-    .afsnit1{
-        flex-direction: row;
-        align-items: center;
-        gap: 1rem;
-
-    }
-    .afsnit2{
-        flex-direction: row-reverse;
-gap: 1rem;
-        align-items: center;
-
-    }
-    .cirkelbillede1,  .cirkelbillede4, .cirkelbillede2, .cirkelbillede3{
-        border-radius: 100%;
-        border:2px solid #fff;
-        width: 17rem;
-    height: 17rem;
-    object-fit: cover;
-    }
-
-/* Tilpas de store cirkler */
-.cirkelbillede2, .cirkelbillede3 {
-    width: 20rem;
-    height: 20rem;
-    position: absolute;
-    z-index: -1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
-/* Placering af cirkelbilleder (desktop) */
+.afsnit1 p, .afsnit2 p {
+  min-width: 20%;
+  max-width: 30rem;
+  text-align: left;
+}
+
+.afsnit1 {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.afsnit2 {
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* CIRKELBILLEDER */
+.cirkelbillede1, .cirkelbillede4, .cirkelbillede2, .cirkelbillede3 {
+  border-radius: 100%; /* Rund form */
+  border: 2px solid #fff;
+  width: 17rem;
+  height: 17rem;
+  object-fit: cover;
+}
+
+/* TILPASNING AF STORE CIRKLER */
+.cirkelbillede2, .cirkelbillede3 {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  z-index: -1;
+}
+
+/* PLACERING AF CIRKELBILLEDER (DESKTOP) */
 .cirkelbillede2 {
-    left: 80%;
-    bottom: 0%;
+  left: 80%;
+  bottom: 0%;
 }
 
 .cirkelbillede3 {
-    right: 80%;
-    bottom: 0%;
+  right: 80%;
+  bottom: 0%;
 }
 
 .cirkelbilleder1, .cirkelbilleder2 {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
+/* FEATURED SECTION */
+.featured {
+  margin-top: 5%;
+}
 
-    
-  .featured{
-    margin-top: 5%;
-  }
+.featured h2 {
+  font-size: 3rem;
+}
 
+/* INTRO-SEKTION BILLEDE */
 .intro img {
-    display:block ;
-  }
-.brugernavn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.brugernavn img{
-    width: 0.5rem;
-   
+  display: block;
 }
 
-  .anmeldelse{
-    border-radius: 1rem;
-    color: #fff;
-    line-height: 1.4;
-   justify-items: center;
-  }
-  .anmeldelse img{
-    width: 100%;  /* tilpas størrelse */
-    height: auto;
-    object-fit: cover;
-    margin: 0;
-  }
-  .kasse{
-    display: flex;
-    flex-direction: column;
-    max-width: 14rem;
-    height: auto;
-    overflow:hidden;
- 
-    background-color: rgba(243, 170, 188, 0.158);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    border: 2px solid white;
-    padding: 1%;
-    height: fit-content;
-    text-align: center;
-  }
-  .kasseindlesflere{
-    display: flex;
-    flex-direction: column;
-    min-width: 14rem;
-    height: 15rem;
-    overflow:hidden;
-    background-color: rgba(243, 170, 188, 0.311);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    border: 2px solid white;
-    text-align: center;
-   
-  }
-  .kasseindlesflere :hover{
-   color:  #4a52b7;
-  }
-  .kasseindlesflere a{
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    margin:auto auto;
- 
-  }
-  .kasse p{
-    font-size: 0.8rem;
-    text-align: left;
-  }
-  .kasser{
-    display: flex;
-    flex-wrap: wrap;
-     justify-content: center;
-     gap: 2rem;
-     margin-bottom: 5rem;
-     margin-left: 1rem;
-     margin-right: 1rem;
-  }
-  .featured h2{
-    font-size: 3rem;
-  }
-  .monedenskunstner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 2px solid white;
-    margin-left: 20%;
-    margin-right: 20%;
-    align-items: center;
-    gap: 5%;
-    padding: 1%;
-   
-  
-  }
-  .monedenskunstner img{
-width: 100%;
-height: auto;
-  }
-  .billedee{
+/* BRUGERNAVN */
+.brugernavn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Mellemrum mellem elementerne */
+}
+
+.brugernavn img {
+  width: 0.5rem; /* Lille ikon */
+}
+
+/* ANMELDELSE */
+.anmeldelse {
+  border-radius: 1rem;
+  color: #fff;
+  line-height: 1.4;
+  justify-items: center;
+}
+
+.anmeldelse img {
+  width: 100%; /* Tilpas størrelse */
+  height: auto;
+  object-fit: cover;
+  margin: 0; /* Ingen margin */
+}
+
+/* KASSE */
+.kasse {
+  display: flex;
+  flex-direction: column;
+  max-width: 14rem;
+  height: fit-content;
+  overflow: hidden;
+  padding: 1%;
+  background-color: rgba(243, 170, 188, 0.158); /* Let baggrund */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge */
+  border: 2px solid white;
+  text-align: center;
+}
+
+/* KASSEINDELSFLERE */
+.kasseindlesflere {
+  display: flex;
+  flex-direction: column;
+  min-width: 14rem;
+  height: 15rem;
+  overflow: hidden;
+  background-color: rgba(243, 170, 188, 0.311); /* Let baggrund */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge */
+  border: 2px solid white;
+  text-align: center;
+}
+
+/* HOVER EFFECT FOR KASSEINDELSFLERE LINKS */
+.kasseindlesflere a:hover {
+  color: #4a52b7;
+}
+
+.kasseindlesflere a {
+  text-decoration: none; /* Fjernet standard understregning */
+  color: white;
+  font-size: 2rem;
+  margin: auto; /* Centrerer linket */
+}
+
+/* KASSE P ELEMENT */
+.kasse p {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+/* ALLE KASSER */
+.kasser {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Mellemrum mellem kasser */
+  margin: 0 1rem 5rem; /* Venstre, højre og nedre margin */
+}
+
+/* MONEDENSKUNSTNER */
+.monedenskunstner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 1%;
+  border: 2px solid white;
+  margin: 0 20%;
+}
+
+.monedenskunstner img {
+  width: 100%;
+  height: auto;
+}
+
+/* BILLEDEE OG TEXT */
+.billedee {
   width: 50%;
+}
+
+.text {
+  width: 50%;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Organiserer indholdet vertikalt */
+  align-items: center;
+}
+
+.text h3 {
+  font-size: 2rem;
+}
+
+.text p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.text a {
+  color: white;
+  display: block; /* Gør linket til et blok-element */
+  margin: 1rem auto; /* Centrerer linket horisontalt */
+  width: fit-content;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.text a:hover {
+  color: #4a52b7;
+}
+
+.anmeldelse a {
+  color: white;
+  display: block; /* Gør linket til et blok-element */
+  margin: 1rem auto; /* Centrerer linket horisontalt */
+  width: fit-content;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.anmeldelse a:hover {
+  color: #4a52b7;
+}
+/* H6 */
+h6 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+/* MOENEDENSVÆLGTE */
+.moenedensvalgte {
+  -webkit-backdrop-filter: blur(30px); /* Frostet glas-effekt for Safari */
+  backdrop-filter: blur(30px); /* Frostet glas-effekt */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px; /* Flerlagede skygger */
+  padding-bottom: 2%;
+}
+
+/* KASSER2 */
+.kasser2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 2% 10rem 2%;
+  padding: 5% 10%;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 0.9rem;
+    padding: 0 5%;
   }
-  .text{
-    width: 50%;
-    padding: 1rem;
-  
-    color: white;
+
+  .intro {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
-  .text h3{
-    font-size: 2rem;
 
-  }
-  .text p{
-    font-size: 0.8rem;
-    font-weight: 500;
-    
-  }
-  .text a{
-    color: white;
-   
-    display: block; /* Make the anchor a block element */
-    margin: 1rem auto; /* Center it horizontally */
-    width: fit-content;
-    font-weight: 800;
-    font-size: 1rem;
-  }
-  .text a:hover{
-    color: #4a52b7;
-  }
-h6{
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-   
-  }
-  .moenedensvalgte{
-    -webkit-backdrop-filter: blur(30px);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding-bottom: 2%;
+  /* Cirklerne kan evt. blive endnu mindre */
+  .cirkelbillede1, .cirkelbillede4, .cirkelbillede2, .cirkelbillede3 {
+    width: 10rem;
+    height: 10rem;
   }
 
-  .kasser2{
-    display: flex;
-    flex-wrap: wrap;
-     justify-content: center;
-     gap: 2rem;
-     margin:0 2% 10rem 2%;
-    padding: 5% 10%;
-   
+  .cirkelbillede2, .cirkelbillede3 {
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    z-index: -1;
   }
 
-/* Media Queries for Mobile */
-@media (max-width: 767px){
-    p {
-        font-size: 0.9rem;
-        padding: 0 5% 0 5%;
-
-    }
-
-   
-    .intro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       }
-    
-        /* Cirklerne kan evt. blive endnu mindre */
-        .cirkelbillede1, .cirkelbillede4, .cirkelbillede2, .cirkelbillede3 {
-            width: 10rem;
-            height: 10rem;
-        }
-        .cirkelbillede2, .cirkelbillede3 {
-            width: 12rem;
-            height: 12rem;
-            position: absolute;
-            z-index: -1;
-        }
-        .cirkelbilleder1{
-        margin: 5% 40% 5% 2%;
-        }
-        .cirkelbilleder2{
-            margin: 5% 0  5% 40%
-        }
-        
-        .afsnit1, .afsnit2 {
-            flex-direction: column;
-            gap: 2rem;
-            align-items: center;
-            justify-content: center;
-        }
-        .monedenskunstner{
-        flex-direction: column;
-    }
-    .billedee{
-       
-        width: 100%;
-        }
-        .text{
-          width: 100%;
-        }
-        .kasser2{
-            margin: 0 -1rem;
-        }
-        
-      
+  .cirkelbilleder1 {
+    margin: 5% 40% 5% 2%;
   }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .afsnit1, .afsnit2 {
-       align-items:flex-start;
-       margin: 2rem;
-       
-    }
 
-    /* Giv p-elementerne mere fleksibilitet */
-   .intro{margin: 0 7%;
+  .cirkelbilleder2 {
+    margin: 5% 0 5% 40%;
+  }
+
+  .afsnit1, .afsnit2 {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .monedenskunstner {
+    flex-direction: column;
+  }
+
+  .billedee {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .kasser2 {
+    margin: 0 -1rem;
+  }
+
+  /* Justeringer for .kasser */
+  .kasser {
+    transform: scale(0.9); /* Skalerer kasserne */
+  }
+
+  body {
+    padding: 10px; /* Tilføjer indvendig padding til kroppen */
+  }
+
+  input[type="text"] {
+    padding: 8px; /* Reducerer padding på mobil */
+  }
+
+  input[type="button"] {
+    padding: 8px 16px;
+    width: auto; /* Justerer bredde for mobil */
+  }
+
+  label[for="file"] {
+    padding: 1rem;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .anmeldelse img {
+    width: 100%;
+    height: auto;
+  }
+
+  .anmeldelse p {
+    font-size: 0.7rem; /* Mindre tekst på mobil */
+  }
+
+  .kassealle p {
+    font-size: 0.9rem; /* Justerer tekststørrelse */
+  }
+
+  .bruger {
+    transform: scale(0.7); /* Skalerer brugersektionen */
+  }
+
+  .kassealle {
+    transform: scale(0.9); /* Skalerer kassealle */
+  }
+
+  .alleokasser {
+    margin: 0; /* Fjern margin for bedre layout på mobil */
+  }
+
+  .navbar .logo img {
+    width: 10rem; /* Mindre logo på små skærme */
+  }
 }
-    .afsnit1 p{
-        max-width: 70%;
-        font-size: 1.2rem;
-    }
-    .afsnit2 p{
-        text-align: right;
-        max-width: 90%;
-    }
 
-    /* Justér cirkelbilleder så de skalerer ned og ikke overlapper skærmen */
-    .cirkelbillede1, .cirkelbillede4, .cirkelbillede2, .cirkelbillede3  {
-        width: 13rem;
-        height: 13rem;
-        
-    }
-    
-    .cirkelbillede2, .cirkelbillede3{
-        width: 14rem;
-        height: 14rem;
-        position: static;
-        
-        right:0;
-        z-index: -1; /* Fjern absolut positionering på mindre skærme */
-        margin: -2rem auto;
-    }
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .afsnit1, .afsnit2 {
+    align-items: flex-start;
+    margin: 2rem;
+  }
 
-    .cirkelbilleder1, .cirkelbilleder2 {
-      
-        flex-direction: column-reverse;
-        margin: 0 auto;
-    }
-    .kasser{
-        margin-left: 9rem;
-        margin-right: 9rem;
-    }
-    .kasser2{
+  /* Giv p-elementerne mere fleksibilitet */
+  .intro {
+    margin: 0 7%;
+  }
+
+  .afsnit1 p {
+    max-width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .afsnit2 p {
+    text-align: right;
+    max-width: 90%;
+  }
+
+  /* Justér cirkelbilleder så de skalerer ned og ikke overlapper skærmen */
+  .cirkelbillede1, .cirkelbillede4, .cirkelbillede2, .cirkelbillede3 {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .cirkelbillede2, .cirkelbillede3 {
+    width: 14rem;
+    height: 14rem;
+    position: static;
+    z-index: -1; /* Fjern absolut positionering på mindre skærme */
+    margin: -2rem auto;
+  }
+
+  .cirkelbilleder1, .cirkelbilleder2 {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+
+  .kasser {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .kasser2 {
     padding: 5% 5%;
- }
+  }
 }
 
- @media only screen and (min-width: 1024px){
-    .kasser2{
-         margin:0 6% 10rem 6%;
-        gap: 3rem;
-       
-      }
-
- }
- 
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .kasser2 {
+    margin: 0 6% 10rem 6%;
+    gap: 3rem;
+  }
+}

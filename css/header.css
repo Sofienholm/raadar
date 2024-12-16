@@ -37,15 +37,13 @@ nav.navbar {
   .menupunkter {
    
     list-style: none;
-   
     position: absolute;
-  top: 0;      /* Samme top som burgerikonet */
-  right: 6%;       /* Samme right som burgerikonet */
-  border-bottom-right-radius:2rem ;
-  border-bottom-left-radius:2rem ;
-  border: 0px  solid white;
-  border-top: #00000000;
-
+    top: 0;      /* Samme top som burgerikonet */
+    right: 6%;       /* Samme right som burgerikonet */
+    border-bottom-right-radius:2rem ;
+    border-bottom-left-radius:2rem ;
+    border: 0px  solid white;
+    border-top: #00000000;
     z-index: 1;
     width: 15rem;
     padding: 1rem;
@@ -63,12 +61,12 @@ nav.navbar {
     
    }
  
-/* Når menuen er åben (dvs. checkboxen er checked) */
+/* Når menuen er åben  */
 #menu-bar:checked ~ .burger-label #burgerikon {
   filter: invert(50%);
   transform: rotate(90deg);
  transition-duration: 1s;
-  /* Eller en anden effekt, fx en anden baggrundsfarve, border, rotation osv. */
+
 }
 
 
@@ -99,7 +97,7 @@ nav.navbar {
       left: 0;        /* Justerer positionen så den starter ved venstre kant */
       right: 0;       /* Sikrer at den også går helt til højre kant */
       top: 0;         /* Flyt menuen til toppen af skærmen */
-      border-radius: 0; /* Fjern eventuelle afrundede hjørner, hvis du vil have den helt ud til kanten */
+      border-radius: 0; 
       padding: 2rem;  /* Juster padding efter behov */
       z-index: 1; /* Lavere end burger-ikonet */
     }
@@ -109,5 +107,5 @@ nav.navbar {
       height: 2.5rem; /* Mindre burgerikon */
     }
   }
-    /* Juster evt. padding og margin yderligere her */
+ 
   
