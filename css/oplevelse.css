@@ -58,7 +58,12 @@
   /* INTRO-SEKTION */
   .intro {
     text-align: center;
-    margin: 0 20% 1%; /* Venstre og højre margin for centreret layout */
+    margin: 0 30% 1%; /* Venstre og højre margin for centreret layout */
+  }
+  .intro li{
+    font-size: small;
+    margin: 0 20% 0.5rem;
+    text-align: left;
   }
   
   /* BRUGERNAVN */

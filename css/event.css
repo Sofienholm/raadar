@@ -273,7 +273,7 @@ form {
 
 /* INPUT FIELDS */
 input[type=text],
-input[type=submit] {
+input[type=email] {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -288,9 +288,10 @@ input::placeholder {
 }
 
 input[type=submit] {
-  background-color: rgba(255, 255, 255, 0.17); /* Let baggrund */
+  background-color: rgba(255, 255, 255, 0.608); /* Let baggrund */
   color: #ffffff;
   border: 1px solid white;
+  padding: 12px 20px;
 }
 
 input[type=submit]:hover {
