@@ -195,6 +195,7 @@ main.kalender {
   line-height: 1.2; /* Forbedret læsbarhed */
   word-wrap: break-word; /* Bryder lange ord */
   text-align: center;
+  padding:10px;
 }
 
 .boks h4,
@@ -314,8 +315,8 @@ input[type=submit]:hover {
 
   /* Kalender fylder mere på små skærme */
   main.kalender {
-    overflow-x: hidden;
-    width: 70%;
+    
+    width: 90%;
     padding: 0;
   }
 
@@ -327,8 +328,7 @@ input[type=submit]:hover {
 
   /* Omarranger bokse til kolonne */
   .flere {
-    width: 100%;
-    flex-direction: column; /* Tillad ombrydning af bokse på mobil */
+    
     gap: 1rem;
   }
 }
@@ -360,8 +360,8 @@ input[type=submit]:hover {
 
   /* Omarranger bokse med mere mellemrum */
   .flere {
-    flex-direction: column;
     gap: 2rem;
+    flex-direction: column;
   }
 }
 

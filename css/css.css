@@ -290,7 +290,7 @@ section.koncert img {
 
 .some h2 {
   color: #fff;
-  font-size: 5rem;
+  font-size: 3rem;
   margin-left: 70%;
 }
 
@@ -321,17 +321,21 @@ section.koncert img {
 @media only screen and (max-width: 768px) {
   body {
     background-image: url(../images/mobil2baggrund.webp); /* Ændrer baggrundsbillede til mobil */
+    padding:0;
   }
-
+  .yderbillede img {
+    overflow:hidden;
+  }
   .navbar .logo img {
     width: 5rem; /* Mindre logo på små skærme */
   }
 
   main {
     flex-direction: column; /* Stabler indholdet vertikalt */
-    transform: scale(0.5); /* Skalerer hovedsektionen */
+    transform: scale(0.4); /* Skalerer hovedsektionen */
     gap: 10rem;
     align-items: center;
+    max-width:100%;
   }
 
   .venstre img {
@@ -377,8 +381,10 @@ section.koncert img {
   .intro {
     flex-direction: column; /* Stabler indholdet vertikalt */
     gap: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
+    max-width:100%;
+   
+  
+   
   }
 
   .eventss a {
@@ -411,7 +417,7 @@ section.koncert img {
   .instabil #to,
   .instabil #tre,
   .instabil #fire {
-    width: 15rem; /* Mindre billeder på mobil */
+    width: 10rem; /* Mindre billeder på mobil */
     height: auto;
   }
 
@@ -420,9 +426,7 @@ section.koncert img {
     transform: scale(0.9); /* Skalerer kasserne */
   }
 
-  body {
-    padding: 10px; /* Tilføjer indvendig padding til kroppen */
-  }
+ 
 
   input[type="text"] {
     padding: 8px; /* Reducerer padding på mobil */

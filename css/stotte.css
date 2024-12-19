@@ -313,6 +313,8 @@ summary::-webkit-details-marker {
   .support-section-content,
   .support-section-images {
     flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .volunteer-section {

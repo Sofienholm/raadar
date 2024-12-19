@@ -206,7 +206,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem; /* Mellemrum mellem kasser */
-  margin: 0 1rem 5rem; /* Venstre, højre og nedre margin */
+  margin:2rem auto; /* Venstre, højre og nedre margin */
 }
 
 /* MONEDENSKUNSTNER */
@@ -299,8 +299,8 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin: 0 2% 10rem 2%;
-  padding: 5% 10%;
+  margin: 5rem 10rem;
+ 
 }
 
 /* MEDIA QUERIES */
@@ -310,6 +310,9 @@ h6 {
   p {
     font-size: 0.9rem;
     padding: 0 5%;
+  }
+  h1{
+    font-size: 30px;
   }
 
   .intro {
@@ -348,6 +351,7 @@ h6 {
 
   .monedenskunstner {
     flex-direction: column;
+    margin:3%;
   }
 
   .billedee {
@@ -359,17 +363,15 @@ h6 {
   }
 
   .kasser2 {
-    margin: 0 -1rem;
+    margin: 2rem auto;
   }
 
-  /* Justeringer for .kasser */
-  .kasser {
-    transform: scale(0.9); /* Skalerer kasserne */
+  /* Justeringer for .kasse */
+  .kasse {
+  max-width:40%;
   }
 
-  body {
-    padding: 10px; /* Tilføjer indvendig padding til kroppen */
-  }
+ 
 
   input[type="text"] {
     padding: 8px; /* Reducerer padding på mobil */
@@ -470,7 +472,7 @@ h6 {
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
   .kasser2 {
-    margin: 0 6% 10rem 6%;
+    margin: 10rem 20% 10rem 20%;
     gap: 3rem;
   }
 }

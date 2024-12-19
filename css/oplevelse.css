@@ -1,356 +1,363 @@
 /* RESET OG BASIS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* BODY STYLING */
-  body {
-    background-image: url(../images/Artboard\ 52.webp);
-    background-size: cover; /* Fylder hele skærmen og skalerer ved resize */
-    background-repeat: repeat-y;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
-    width: 100%; /* Justeret til 100% for bedre responsivitet */
-    height: auto;
-    color: white; /* Ensartet tekstfarve */
-  }
-  
-  /* NAVBAR */
-  .navbar .logo img {
-    width: 13rem;
-    height: auto;
-    /* Fjern margin-left: 40%; Lad flex centrere det */
-  }
-  
-  .menupunkter {
-    background: hsla(333, 71%, 55%, 0.592); /* Semi-transparent baggrund */
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge for dybde */
-  }
-  
-  /* TYPOGRAFI */
-  h1, h2, h3, p {
-    color: #ffffff; /* Ensartet farve for overskrifter og paragraf */
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin: 5%; /* Spacing omkring h1 */
-  }
-  
-  h2 {
-    text-align: center;
-    margin: 3rem 0 1.5rem; /* Øvre og nedre margin */
-  }
-  
-  h3 {
-    font-size: 1rem;
-    text-align: center;
-  }
-  
-  p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    margin: 0; /* Fjerner yderligere margin */
-  }
-  
-  /* INTRO-SEKTION */
-  .intro {
-    text-align: center;
-    margin: 0 30% 1%; /* Venstre og højre margin for centreret layout */
-  }
-  .intro li{
-    font-size: small;
-    margin: 0 20% 0.5rem;
-    text-align: left;
-  }
-  
-  /* BRUGERNAVN */
-  .brugernavn {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Mellemrum mellem elementerne */
-  }
-  
-  .brugernavn img {
-    width: 1rem; /* Lille ikon */
-  }
-  
-  /* ANMELDELSE */
-  .anmeldelse {
-    border-radius: 1rem;
-    color: #fff;
-    line-height: 1.4;
-    justify-items: center;
-  }
-  
-  .anmeldelse img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem; /* Plads over billedet */
-  }
-  
-  /* KASSE */
-  .kasse {
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: fit-content;
-    overflow: hidden;
-    padding: 1rem;
-    background-color: rgba(231, 84, 121, 0.519); /* Let baggrund */
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge */
-  }
-  
-  /* KASSER CONTAINER */
-  .kasser {
-    display: flex;
-    justify-content: center;
-    gap: 2rem; /* Mellemrum mellem kasser */
-    margin: 0 1rem 10rem; /* Venstre, højre og nedre margin */
-  }
-  
-  /* MIDTERST BILLEDE */
-  #midterstebil {
-    transform: scale(1.1); /* Forstørrelse af billedet */
-  }
-  
-  /* VERTICAL LINE */
-  .vl {
-    border-left: 2px solid rgb(255, 255, 255);
-    height: 14rem;
-  }
-  
-  /* UPLOADED SECTION */
-  .uploaded {
-    margin: 5rem 0; /* Øvre og nedre margin */
-  }
-  
-  /* DELMINER SECTION */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY STYLING */
+body {
+  background-image: url(../images/Artboard\ 52.webp);
+  background-size: cover; /* Fylder hele skærmen og skalerer ved resize */
+  background-repeat: repeat-y;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  width: 100%; /* Justeret til 100% for bedre responsivitet */
+  height: auto;
+  color: white; /* Ensartet tekstfarve */
+}
+
+/* NAVBAR */
+.navbar .logo img {
+  width: 13rem;
+  height: auto;
+  /* Fjern margin-left: 40%; Lad flex centrere det */
+}
+
+.menupunkter {
+  background: hsla(333, 71%, 55%, 0.592); /* Semi-transparent baggrund */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge for dybde */
+}
+
+/* TYPOGRAFI */
+h1, h2, h3, p {
+  color: #ffffff; /* Ensartet farve for overskrifter og paragraf */
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 5%; /* Spacing omkring h1 */
+}
+
+h2 {
+  text-align: center;
+  margin: 3rem 0 1.5rem; /* Øvre og nedre margin */
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 0; /* Fjerner yderligere margin */
+}
+
+/* INTRO-SEKTION */
+.intro {
+  text-align: center;
+ margin:0 auto;
+  max-width:30rem;
+}
+.intro li{
+  font-size: small;
+  margin: 0 20% 0.5rem;
+  text-align: left;
+}
+
+/* BRUGERNAVN */
+.brugernavn {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Mellemrum mellem elementerne */
+}
+
+.brugernavn img {
+  width: 1rem; /* Lille ikon */
+}
+
+/* ANMELDELSE */
+.anmeldelse {
+  border-radius: 1rem;
+  color: #fff;
+  line-height: 1.4;
+  justify-items: center;
+}
+
+.anmeldelse img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem; /* Plads over billedet */
+}
+
+/* KASSE */
+.kasse {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: fit-content;
+ 
+  padding: 1rem;
+  background-color: rgba(231, 84, 121, 0.519); /* Let baggrund */
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge */
+}
+
+/* KASSER CONTAINER */
+.kasser {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Mellemrum mellem kasser */
+  margin:0 auto; /* Venstre, højre og nedre margin */
+}
+
+/* MIDTERST BILLEDE */
+#midterstebil {
+  transform: scale(1.1); /* Forstørrelse af billedet */
+}
+
+/* VERTICAL LINE */
+.vl {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 14rem;
+}
+
+/* UPLOADED SECTION */
+.uploaded {
+  margin: 5rem 0; /* Øvre og nedre margin */
+}
+
+/* DELMINER SECTION */
+.delminder {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.16); /* Semi-transparent baggrund */
+  margin: 3% auto;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 3rem; /* Mellemrum mellem elementerne */
+  max-width: fit-content;
+}
+
+/* VENSTRE OG HØJRE CONTAINERS */
+.venstre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.højre {
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 1%;
+  justify-self: center;
+}
+
+/* LABEL STYLING */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: white; /* Tekstfarve af label */
+}
+
+/* INPUT FIELDS */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: rgba(68, 64, 64, 0.26); /* Let baggrund */
+  color: white;
+}
+
+input::placeholder {
+  color: white; /* Placeholder tekstfarve */
+}
+
+input[type="button"] {
+  background-color: rgba(255, 255, 255, 0.29); /* Let baggrund */
+  color: #fff;
+  padding: 0 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 1rem;
+}
+
+/* SKJUL FILE INPUT */
+input[type="file"] { 
+  display: none; /* Skjuler file input */
+}
+
+/* CUSTOM FILE INPUT LABEL */
+label[for="file"] {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.5rem;
+  margin-top: 2rem;
+  justify-items: center;
+  align-content: center;
+  color: #ffffff;
+  border: 3px dotted #ffffff;
+  padding: 1.5rem;
+  border-radius: 2em;
+  transition: background 1s, color 1s; /* Glidende overgang ved hover */
+}
+
+label[for="file"]:hover,
+label[for="file"]:focus,
+label[for="file"]:active {
+  background: rgba(162, 40, 40, 0.48); /* Mørkere baggrund ved interaktion */
+  color: #000000; /* Tekstfarve ændres ved interaktion */
+}
+
+/* KASSEALLE */
+.kassealle {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: fit-content;
+  padding: 2rem;
+  background-color: rgba(231, 84, 121, 0.519); /* Let baggrund */
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge */
+  transform: scale(0.9); /* Skalerer kassen */
+}
+
+/* ALLE OKASSER */
+.alleokasser {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+.featured{
+max-width:100%;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBIL: UNDER 768PX */
+@media only screen and (max-width: 768px) {
   .delminder {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.16); /* Semi-transparent baggrund */
-    margin: 3% auto;
-    border: 2px solid white;
-    border-radius: 1rem;
+    flex-direction: column;
+    max-width: 80%;
+    align-items: center;
     padding: 1rem;
-    gap: 3rem; /* Mellemrum mellem elementerne */
-    max-width: fit-content;
   }
-  
-  /* VENSTRE OG HØJRE CONTAINERS */
-  .venstre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .kasse{
+     overflow: hidden;
   }
-  
+
+  .vl {
+    display: none; /* Skjuler den vertikale linje på mobil */
+  }
+
   .højre {
-    border: 2px solid white;
-    border-radius: 1rem;
-    padding: 2rem;
-    justify-self: center;
-  }
-  
-  /* LABEL STYLING */
-  label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-    color: white; /* Tekstfarve af label */
-  }
-  
-  /* INPUT FIELDS */
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 20px;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    background-color: rgba(68, 64, 64, 0.26); /* Let baggrund */
-    color: white;
-  }
-  
-  input::placeholder {
-    color: white; /* Placeholder tekstfarve */
-  }
-  
-  input[type="button"] {
-    background-color: rgba(255, 255, 255, 0.29); /* Let baggrund */
-    color: #fff;
-    padding: 0 2rem;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 1rem;
-  }
-  
-  /* SKJUL FILE INPUT */
-  input[type="file"] { 
-    display: none; /* Skjuler file input */
-  }
-  
-  /* CUSTOM FILE INPUT LABEL */
-  label[for="file"] {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 0.5rem;
     margin-top: 2rem;
-    justify-items: center;
-    align-content: center;
-    color: #ffffff;
-    border: 3px dotted #ffffff;
-    padding: 1.5rem;
-    border-radius: 2em;
-    transition: background 1s, color 1s; /* Glidende overgang ved hover */
+    width: 60%;
   }
-  
-  label[for="file"]:hover,
-  label[for="file"]:focus,
-  label[for="file"]:active {
-    background: rgba(162, 40, 40, 0.48); /* Mørkere baggrund ved interaktion */
-    color: #000000; /* Tekstfarve ændres ved interaktion */
-  }
-  
-  /* KASSEALLE */
-  .kassealle {
-    display: flex;
+
+  .kasser {
+    transform: scale(0.9); /* Skalerer kasserne */
     flex-direction: column;
-    width: 20rem;
-    height: fit-content;
-    padding: 2rem;
-    background-color: rgba(231, 84, 121, 0.519); /* Let baggrund */
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; /* Dybere skygge */
-    transform: scale(0.9); /* Skalerer kassen */
+    align-items:center;
   }
+
   
-  /* ALLE OKASSER */
-  .alleokasser {
-    display: flex;
-    flex-wrap: wrap;
+
+  input[type="text"] {
+    padding: 8px; /* Reducerer padding på mobil */
+  }
+
+  input[type="button"] {
+    padding: 8px 16px;
+    width: auto; /* Justerer bredde for mobil */
+  }
+
+  label[for="file"] {
+    padding: 1rem;
+    margin: auto;
     justify-content: center;
-    align-items: center;
+  }
+
+  .anmeldelse img {
+    width: 100%;
+    height: auto;
+  }
+
+  .anmeldelse p {
+    font-size: 0.7rem; /* Mindre tekst på mobil */
+  }
+
+  .kassealle p {
+    font-size: 0.9rem; /* Justerer tekststørrelse */
+  }
+
+  .bruger {
+    transform: scale(0.7); /* Skalerer brugersektionen */
+  }
+  .brugernavn{
+      gap:0rem
+  }
+
+  .kassealle {
+   width: 50%;
+  }
+
+  .alleokasser {
+    margin: 0; /* Fjern margin for bedre layout på mobil */
+    padding: 0;
+    max-width: 200%;
+  }
+
+  .navbar .logo img {
+    width: 10rem; /* Mindre logo på små skærme */
+  }
+}
+
+/* TABLET: MELLEM 768PX OG 1024PX */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .delminder {
+    flex-direction: column;
+    margin: 0 10rem; /* Justerer margin for tablet */
+  }
+
+  .vl {
+    display: none; /* Skjuler den vertikale linje på tablet */
+  }
+
+  .højre {
     margin-top: 2rem;
-    padding-bottom: 5rem;
   }
-  
-  /* MEDIA QUERIES */
-  
-  /* MOBIL: UNDER 768PX */
-  @media only screen and (max-width: 768px) {
-    .delminder {
-      flex-direction: column;
-      max-width: 80%;
-      align-items: center;
-      padding: 1rem;
-    }
-  
-    .vl {
-      display: none; /* Skjuler den vertikale linje på mobil */
-    }
-  
-    .højre {
-      margin-top: 2rem;
-      width: 20rem;
-    }
-  
-    .kasser {
-      transform: scale(0.9); /* Skalerer kasserne */
-    }
-  
-    body {
-      padding: 10px; /* Tilføjer indvendig padding til kroppen */
-    }
-  
-    input[type="text"] {
-      padding: 8px; /* Reducerer padding på mobil */
-    }
-  
-    input[type="button"] {
-      padding: 8px 16px;
-      width: auto; /* Justerer bredde for mobil */
-    }
-  
-    label[for="file"] {
-      padding: 1rem;
-      margin: auto;
-      justify-content: center;
-    }
-  
-    .anmeldelse img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .anmeldelse p {
-      font-size: 0.7rem; /* Mindre tekst på mobil */
-    }
-  
-    .kassealle p {
-      font-size: 0.9rem; /* Justerer tekststørrelse */
-    }
-  
-    .bruger {
-      transform: scale(0.7); /* Skalerer brugersektionen */
-    }
-    .brugernavn{
-        gap:0rem
-    }
-  
-    .kassealle {
-     width: 50%;
-    }
-  
-    .alleokasser {
-      margin: 0; /* Fjern margin for bedre layout på mobil */
-      padding: 0;
-      max-width: 200%;
-    }
-  
-    .navbar .logo img {
-      width: 10rem; /* Mindre logo på små skærme */
-    }
+
+  /* Justerer input padding igen, hvis nødvendigt */
+  input[type="text"] {
+    padding: 8px;
   }
-  
-  /* TABLET: MELLEM 768PX OG 1024PX */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .delminder {
-      flex-direction: column;
-      margin: 0 10rem; /* Justerer margin for tablet */
-    }
-  
-    .vl {
-      display: none; /* Skjuler den vertikale linje på tablet */
-    }
-  
-    .højre {
-      margin-top: 2rem;
-    }
-  
-    /* Justerer input padding igen, hvis nødvendigt */
-    input[type="text"] {
-      padding: 8px;
-    }
-  
-    input[type="button"] {
-      padding: 8px 16px;
-      width: auto;
-    }
-  
-    label[for="file"] {
-      padding: 1rem;
-    }
+
+  input[type="button"] {
+    padding: 8px 16px;
+    width: auto;
   }
-  
-  /* DESKTOP: OVER 1024PX */
-  @media only screen and (min-width: 1024px) {
-    .alleokasser {
-      max-width: 70rem;
-      margin: 0 auto; /* Centrerer containeren */
-    }
+
+  label[for="file"] {
+    padding: 1rem;
   }
+}
+
+/* DESKTOP: OVER 1024PX */
+@media only screen and (min-width: 1024px) {
+  .alleokasser {
+    max-width: 70rem;
+    margin: 0 auto; /* Centrerer containeren */
+  }
+}
